@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="" />
+    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifyMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notifyMe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NotifyMe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/testNotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Test/testNotifyMe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/diagram.uml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Notification/NotificationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/SmsNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Users/UserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Humidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Humidity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Rain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Sun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/UvIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/UvIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Weather/ZipCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Weather/ZipCode.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,21 +57,36 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1WsehvPkLJmNWZv8zRBTcT14hX7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -45,8 +97,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.testNotifyMe">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.NotifyMe">
     <configuration name="NotifyMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NotifyMe" />
       <module name="notifyMe" />
@@ -71,8 +129,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testNotifyMe" />
         <item itemvalue="Application.NotifyMe" />
+        <item itemvalue="JUnit.testNotifyMe" />
       </list>
     </recent_temporary>
   </component>
@@ -98,38 +156,58 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1579942851772</updated>
-      <workItem from="1579942853840" duration="14575000" />
+      <workItem from="1579942853840" duration="15502000" />
+      <workItem from="1580098799373" duration="11540000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1580002072327">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580002072327" />
+    <state x="458" y="188" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580067892514">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="458" y="188" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.974@0.23.1680.974" timestamp="1580067892514" />
     <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580002341480">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1580002341480" />
-    <state width="1638" height="287" key="GridCell.Tab.0.bottom" timestamp="1580002162161">
+    <state width="1638" height="244" key="GridCell.Tab.0.bottom" timestamp="1580337349493">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="287" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580002162161" />
-    <state width="1638" height="287" key="GridCell.Tab.0.center" timestamp="1580002162157">
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434335" />
+    <state width="3398" height="381" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208077" />
+    <state width="1638" height="244" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580337349493" />
+    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1580187507181" />
+    <state width="1638" height="244" key="GridCell.Tab.0.center" timestamp="1580337349492">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="287" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580002162157" />
-    <state width="1638" height="287" key="GridCell.Tab.0.left" timestamp="1580002162154">
+    <state width="1638" height="185" key="GridCell.Tab.0.center/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434332" />
+    <state width="3398" height="381" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208075" />
+    <state width="1638" height="244" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580337349492" />
+    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
+    <state width="1638" height="244" key="GridCell.Tab.0.left" timestamp="1580337349491">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="287" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580002162154" />
-    <state width="1638" height="287" key="GridCell.Tab.0.right" timestamp="1580002162159">
+    <state width="1638" height="185" key="GridCell.Tab.0.left/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434330" />
+    <state width="3398" height="381" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208073" />
+    <state width="1638" height="244" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580337349491" />
+    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1580187507179" />
+    <state width="1638" height="244" key="GridCell.Tab.0.right" timestamp="1580337349492">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="287" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580002162159" />
+    <state width="1638" height="185" key="GridCell.Tab.0.right/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434333" />
+    <state width="3398" height="381" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208076" />
+    <state width="1638" height="244" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580337349492" />
+    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
     <state width="1638" height="354" key="GridCell.Tab.1.bottom" timestamp="1579997507872">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -146,6 +224,18 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="354" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1579997507870" />
+    <state x="386" y="-1057" key="Maven.ArtifactSearchDialog" timestamp="1580246832231">
+      <screen x="-872" y="-1440" width="3440" height="1440" />
+    </state>
+    <state x="386" y="-1057" key="Maven.ArtifactSearchDialog/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580246832231" />
+    <state x="349" y="149" key="SettingsEditor" timestamp="1580067882136">
+      <screen x="0" y="23" width="1680" height="974" />
+    </state>
+    <state x="349" y="149" key="SettingsEditor/0.23.1680.974@0.23.1680.974" timestamp="1580067882136" />
+    <state x="496" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1580098799307">
+      <screen x="0" y="23" width="1680" height="960" />
+    </state>
+    <state x="496" y="337" key="com.intellij.ide.util.TipDialog/0.23.1680.960@0.23.1680.960" timestamp="1580098799307" />
     <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580000250824">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -155,7 +245,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/Notification/Notification.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/Notification/Notification.java</url>
           <line>21</line>
           <properties class="main.Notification.Notification" method="setUserContact">
             <option name="EMULATED" value="true" />

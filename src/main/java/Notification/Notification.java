@@ -1,10 +1,10 @@
-package main.Notification;
+package Notification;
 
 //This will be the abstract notification package which will be extended by the concrete sms and email notification classes.
 //Defination of the abstract class will make it easier for future implementations of new concrete classes, Eg. Slack or Whatsapp.
 public abstract class Notification {
 
-    //Method to retrive UserPreferences.
+    //Method to retrieve UserPreferences.
     public void getUserOptions() {
         //TBD
     }
@@ -23,7 +23,7 @@ public abstract class Notification {
 
     //The message builder method will actually build the message, but will probably be overridden  by the concrete classes.
     public String messageBuilder() {
-        String message = "This is a default main.Notification";
+        String message = "This is a default Notification";
         return message;
     }
 

@@ -1,4 +1,4 @@
-package main.Notification;
+package Notification;
 
 public class SmsNotification extends Notification {
 
@@ -22,7 +22,7 @@ public class SmsNotification extends Notification {
 
     //SmsNotification objects message Builder.
     public String messageBuilder() {
-        String message = "This is a Sms main.Notification";
+        String message = "This is a Sms Notification";
         return message;
     }
 

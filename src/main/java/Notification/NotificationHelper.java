@@ -1,13 +1,13 @@
-package main.Notification;
+package Notification;
 
-import main.Users.UserPreferences;
+import Users.UserPreferences;
 
 //Helper class for Notifications.
 public class NotificationHelper {
 
     public void complieNotification(UserPreferences userPreferences) {
 
-        //Creating a notificaiton object.
+        //Creating a notification object.
         Notification notification;
 
         //Setting up the main.Notification object based on weather the user selected Email main.Notification or SmsNotification.

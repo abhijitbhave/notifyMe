@@ -1,4 +1,4 @@
-package main.Notification;
+package Notification;
 
 //Concrete implementation of the EmailNotification class which extends from the abstract main.Notification class.
 public class EmailNotification extends Notification {
@@ -20,7 +20,7 @@ public class EmailNotification extends Notification {
 
     //Message builder for Emails.
     public String messageBuilder() {
-        String message = "This is a Email main.Notification";
+        String message = "This is an Email Notification";
         return message;
     }
 

@@ -1,10 +1,10 @@
 package Test;
 
-
-import main.Notification.EmailNotification;
-import main.Notification.SmsNotification;
+import Notification.EmailNotification;
+import Notification.SmsNotification;
 import org.junit.Test;
 import static org.junit.Assert.*;
+
 public class testNotifyMe {
 
 @Test

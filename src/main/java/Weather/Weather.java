@@ -1,4 +1,4 @@
-package main.Weather;
+package Weather;
 
 //The all inclusive class for various weather components.
 public class Weather {

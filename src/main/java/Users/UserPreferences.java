@@ -1,4 +1,4 @@
-package main.Users;
+package Users;
 
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -21,7 +21,11 @@ public class UserPreferences {
     }
 
     public void setSelectedWeatherConditions(String weatherCondition) {
-        this.selectedWeatherConditions.add(weatherCondition);
+        weatherCondition = weatherCondition.substring(1, weatherCondition.length() - 1);
+        String[] weatherconditions = weatherCondition.split(",");
+        for (String weather : weatherconditions) {
+            this.selectedWeatherConditions.add(weather);
+        }
     }
 
     public String getUserFirstName() {
@@ -61,11 +65,11 @@ public class UserPreferences {
     }
 
     public void setUserContactUntilDate(String date) {
-        if(date != "" || date != " "){
+        if (date != "" || date != " ") {
             LocalTime userContactUntilDate = LocalTime.parse(date);
-        }
-        else
+        } else {
             userContactUntilDate = null;
+        }
     }
 
     @Override

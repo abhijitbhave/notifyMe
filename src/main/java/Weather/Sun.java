@@ -1,4 +1,4 @@
-package main.Weather;
+package Weather;
 
 import java.util.Date;
 

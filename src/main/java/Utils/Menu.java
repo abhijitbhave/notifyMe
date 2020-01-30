@@ -1,6 +1,6 @@
-package main.Utils;
+package Utils;
 
-import main.Users.UserPreferences;
+import Users.UserPreferences;
 import java.util.Scanner;
 
 //The main.Utils.Menu class. Could be extended in the future.
@@ -17,7 +17,7 @@ public class Menu {
         up.setUserFirstName(console.next());
         System.out.println("\n Please enter last Name");
         up.setUserLastName(console.next());
-        System.out.println("\n Please enter comunication preference (1. Email 2. Sms)");
+        System.out.println("\n Please enter communication preference (1. Email 2. Sms)");
         Integer choice = console.nextInt();
         if (choice == 1) {
             up.setUserContactPreference("Email");
