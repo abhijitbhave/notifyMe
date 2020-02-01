@@ -1,5 +1,3 @@
-package Test;
-
 import Notification.EmailNotification;
 import Notification.SmsNotification;
 import org.junit.Test;

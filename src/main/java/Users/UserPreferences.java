@@ -20,12 +20,17 @@ public class UserPreferences {
         return selectedWeatherConditions;
     }
 
+    //Overloading for set weather conditions from properties File.
     public void setSelectedWeatherConditions(String weatherCondition) {
         weatherCondition = weatherCondition.substring(1, weatherCondition.length() - 1);
         String[] weatherconditions = weatherCondition.split(",");
         for (String weather : weatherconditions) {
             this.selectedWeatherConditions.add(weather);
         }
+    }
+    //Overloading for set weather conditions from Menu.
+    public void setSelectedWeatherConditions(ArrayList<String> weatherConditions) {
+        this.selectedWeatherConditions = weatherConditions;
     }
 
     public String getUserFirstName() {
