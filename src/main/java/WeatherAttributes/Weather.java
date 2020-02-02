@@ -1,4 +1,4 @@
-package Weather;
+package WeatherAttributes;
 
 //The all inclusive class for various weather components.
 public class Weather {

@@ -1,4 +1,4 @@
-package Weather;
+package WeatherAttributes;
 
 //Class to model user ZipCode.
 public class ZipCode {

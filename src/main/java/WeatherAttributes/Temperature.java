@@ -1,4 +1,4 @@
-package Weather;
+package WeatherAttributes;
 
 //Class to model Temperature conditions.
 public class Temperature {
