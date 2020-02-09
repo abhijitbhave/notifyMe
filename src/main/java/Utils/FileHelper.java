@@ -1,7 +1,6 @@
 package Utils;
 
 import Users.UserPreferences;
-import com.sun.tools.corba.se.idl.constExpr.Not;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,7 +16,7 @@ public class FileHelper {
     private String fileName = "UserPreferences.properties";
 
 
-    //Leveraging the Java Properties dictionary to create Prosperties (text) file to be able to store data.
+    //Leveraging the Java Properties dictionary to create Properties (text) file to be able to store data.
     public void writeUserPreferences(UserPreferences userPreferences) {
         //OutputStream to be able to write to the file.
         OutputStream outStream = null;

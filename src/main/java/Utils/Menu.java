@@ -1,7 +1,9 @@
 package Utils;
 
+import Notification.NotificationHelper;
 import Users.UserPreferences;
-import com.sun.tools.corba.se.idl.constExpr.Not;
+import WeatherAttributes.Weather;
+import WeatherUtils.FetchWeather;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -26,15 +28,22 @@ public class Menu {
             //If user chose to send notification, first checking if a user is registered.
             //Note at this point only one user can be registered.
             FileHelper fh = new FileHelper();
-            UserPreferences up = fh.readUserPreferences();
+            UserPreferences userPreferences = fh.readUserPreferences();
             //If user is not registered then running menu to register user.
-            if (up.getUserFirstName() == null) {
+            if (userPreferences.getUserFirstName() == null) {
                 System.out.println("\nDid not find any registered users.");
                 System.out.println("Please register a user.\n");
                 registerUser();
             }
             //If user is registered, then will call the notification flow, to be implemented.
-            System.out.println("You have selected to Notify user " + up.getUserFirstName());
+            System.out.println("You have selected to Notify user " + userPreferences.getUserFirstName());
+            NotificationHelper notificationHelper = new NotificationHelper();
+            FetchWeather fetchWeather = new FetchWeather();
+            Weather weather = fetchWeather.setWeatherAttributes();
+            notificationHelper.complieNotification(weather, userPreferences);
+
+//            Notification notification = new SmsNotification(NotificationType.SMS);
+//            notification.sendNotifiation(weather, userPreferences);
             //To be implemented;
         } else {
             System.out.println("Invalid choice.");
@@ -139,6 +148,9 @@ public class Menu {
         //Once the user has selected the required options, persisting the data to the properties file using the FileHelper class and
         //returninng to main menu
         up.setSelectedWeatherConditions(weatherConditions);
+        System.out.println(
+            "You have selected to be notified by: " + up.getUserContactPreference() + " for the following weather conditions: \n" + up
+                .getSelectedWeatherConditions().toString()+"\n");
         FileHelper fh = new FileHelper();
         fh.writeUserPreferences(up);
         mainMenu();
