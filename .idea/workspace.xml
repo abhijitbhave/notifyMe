@@ -1,71 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_0_android.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_smtp_1_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twilio_sdk_twilio_7_42_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_javax_mail_api_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_unknown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic Sequence Diagram (1).pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EmailNotification.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seqdiagram.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/DateHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Snow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testGenericNotification.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/notifyMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notifyMe.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/SmsNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NotifyMe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/NotifyMeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/NotifyMeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Humidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Humidity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Rain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Temperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/UvIndex.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Wind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/ZipCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testNotifyMe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testUserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserPreferences.java" afterDir="false" />
-    </list>
+    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +161,7 @@
       <workItem from="1581106648460" duration="21000" />
       <workItem from="1581183350145" duration="1640000" />
       <workItem from="1581185987713" duration="10501000" />
-      <workItem from="1581209098264" duration="1476000" />
+      <workItem from="1581209098264" duration="1665000" />
     </task>
     <servers />
   </component>
@@ -345,10 +281,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1050@0.0.1680.1050" timestamp="1580000250824" />
-    <state x="503" y="294" width="673" height="462" key="find.popup" timestamp="1580842227173">
+    <state x="503" y="294" width="673" height="462" key="find.popup" timestamp="1581215480507">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="503" y="294" width="673" height="462" key="find.popup/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1580842227173" />
+    <state x="503" y="294" width="673" height="462" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581215480507" />
     <state x="554" y="323" width="670" height="728" key="search.everywhere.popup" timestamp="1580957979739">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

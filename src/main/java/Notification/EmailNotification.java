@@ -11,7 +11,7 @@ import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
 //Concrete implementation of the EmailNotification class which extends from the abstract Notification class.
-//The class is leveraging SpringBoot for email operations.
+
 
 
 public class EmailNotification extends Notification {
