@@ -1,30 +1,43 @@
 package Notification;
 
+import Users.UserPreferences;
+import Utils.DateHelper;
+import Utils.FileHelper;
+
+
 //This will be the abstract notification package which will be extended by the concrete sms and email notification classes.
-//Defination of the abstract class will make it easier for future implementations of new concrete classes, Eg. Slack or Whatsapp.
-public abstract class Notification {
+//Definition  of the abstract class will make it easier for future implementations of new concrete classes, Eg. Slack or Whatsapp.
+public abstract class Notification<K> {
+
+    private NotificationType notificationType = null;
+
+    public Notification(NotificationType notificationType) {
+        this.notificationType = notificationType;
+    }
 
     //Method to retrieve UserPreferences.
-    public void getUserOptions() {
-        //TBD
+    private UserPreferences getUserOptions() {
+        FileHelper fh = new FileHelper();
+        UserPreferences userPreferences = fh.readUserPreferences();
+        return userPreferences;
+
     }
 
-    //Method to set the required schedules based on dates and times for main.Notification. Expected to be a concrete method.
-    public void setNotificationSchedule() {
-    }
+    //An abstract sendNotification method that will be implemented by concrete Child classes.
+    public abstract String sendNotification(K notificationObject, UserPreferences userPreferences);
 
-    //A probable Send notification method. Expected to be a concrete method.
-    public void sendNotifiation() {
-    }
+    //A concrete method to be leveraged by all child classes to be able to frame the actual message being sent out by Email or Sms.
+    //As long as the Notification Object supports a toString method, the type of even would not matter for a notification to be framed.
+    public String messageBuilder(K outgoingMessage) {
+        UserPreferences userPreferences = getUserOptions();
+        StringBuilder message = new StringBuilder();
+        message.append("This message is for " + userPreferences.getUserFirstName() + "\n");
+        message.append("Here is the weather for tomorrow: " + DateHelper.getTomorrow());
+        message.append("\n *******************************\n");
+        message.append(outgoingMessage.toString());
+        message.append("\n *******************************\n");
+        return message.toString();
 
-    //Defined as a abstract method to set the users contact Identifier. Expected to have concrete classes implement this since the contact identifier
-    //could take on various data types.
-    public abstract void setUserContact(String userContact);
-
-    //The message builder method will actually build the message, but will probably be overridden  by the concrete classes.
-    public String messageBuilder() {
-        String message = "This is a default Notification";
-        return message;
     }
 
 }

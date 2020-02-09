@@ -69,13 +69,13 @@ public class UserPreferences {
         return userContactUntilDate;
     }
 
-    public void setUserContactUntilDate(String date) {
-        if (date != "" || date != " ") {
-            LocalTime userContactUntilDate = LocalTime.parse(date);
-        } else {
-            userContactUntilDate = null;
-        }
-    }
+//    public void setUserContactUntilDate(String date) {
+//        if (date != "" || date != " ") {
+//            LocalTime userContactUntilDate = LocalTime.parse(date);
+//        } else {
+//            userContactUntilDate = null;
+//        }
+//    }
 
     @Override
     public String toString() {

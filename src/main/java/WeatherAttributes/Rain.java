@@ -3,22 +3,26 @@ package WeatherAttributes;
 //Class to model Rain conditions.
 public class Rain {
 
-    private Integer rainInInches;
-    private Integer precipitationChance;
+    private Double rainInInches;
+    private Double precipitationChance;
 
-    public Integer getRainInInches() {
+    public Double getRainInInches() {
         return rainInInches;
     }
 
-    public void setRainInInches(Integer rainInInches) {
+    public void setRainInInches(Double rainInInches) {
         this.rainInInches = rainInInches;
     }
 
-    public Integer getPrecipitationChance() {
+    public Double getPrecipitationChance() {
         return precipitationChance;
     }
 
-    public void setPrecipitationChance(Integer precipitationChance) {
+    public void setPrecipitationChance(Double precipitationChance) {
         this.precipitationChance = precipitationChance;
+    }
+
+    public String toString() {
+        return ("\nRAIN:\nRain in Inches: " + rainInInches.toString()+",\nPrecipitation Chance: "+precipitationChance.toString()+"\n");
     }
 }

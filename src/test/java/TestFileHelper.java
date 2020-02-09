@@ -14,6 +14,7 @@ public class TestFileHelper {
     ArrayList<String> weather = new ArrayList<String>();
 
 
+    //Testing the creation of the userPreferences file.
     @Test
     public void testWriteUserPreferences() {
         up.setUserFirstName("Tom");
@@ -31,6 +32,8 @@ public class TestFileHelper {
         assertTrue(file.canWrite());
 
     }
+
+    //Testing the read from the UserPreferences file.
 
     @Test
     public void testReadUserPreferences() {

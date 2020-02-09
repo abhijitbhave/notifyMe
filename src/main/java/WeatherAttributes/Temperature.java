@@ -3,22 +3,45 @@ package WeatherAttributes;
 //Class to model Temperature conditions.
 public class Temperature {
 
-    private Integer temperature;
-    private Integer feelsLike;
+    private Double temperature;
+    private Double feelsLike;
+    private Double maxTemp;
+    private Double minTemp;
 
-    public Integer getFeelsLike() {
+    public Double getMaxTemp() {
+        return maxTemp;
+    }
+
+    public void setMaxTemp(Double maxTemp) {
+        this.maxTemp = maxTemp;
+    }
+
+    public Double getMinTemp() {
+        return minTemp;
+    }
+
+    public void setMinTemp(Double minTemp) {
+        this.minTemp = minTemp;
+    }
+
+    public Double getFeelsLike() {
         return feelsLike;
     }
 
-    public void setFeelsLike(Integer feelsLike) {
+    public void setFeelsLike(Double feelsLike) {
         this.feelsLike = feelsLike;
     }
 
-    public Integer getTemperature() {
+    public Double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(Integer temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
+    }
+
+    public String toString() {
+        return ("\nTEMP: \nTemperature: " + temperature.toString()+",\nFeels Like: "+feelsLike.toString()
+            +",\nMax Temp: "+maxTemp.toString()+",\nMin Temp: "+minTemp.toString()+"\n");
     }
 }

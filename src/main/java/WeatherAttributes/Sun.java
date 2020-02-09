@@ -1,6 +1,9 @@
 package WeatherAttributes;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.TimeZone;
 
 //Class to model Sunset and SunRise.
 public class Sun {
@@ -22,5 +25,18 @@ public class Sun {
 
     public void setSunSet(Date sunSet) {
         this.sunSet = sunSet;
+    }
+
+    //DateFormat dateFormat = new SimpleDateFormat("HH:mm");
+    //dateFormat.setTimeZone(TimeZone.getTimeZone("PST"));
+    //String formatted = dateFormat.format(date);
+    //System.out.println(formatted);
+
+    public String toString() {
+        DateFormat dateFormat = new SimpleDateFormat("HH:mm");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("PST"));
+        String sunriseTime = dateFormat.format(sunRise);
+        String sunsetTime = dateFormat.format(sunSet);
+        return ("\nSUN:\nSunRise: " + sunriseTime+",\nSunSet: "+sunsetTime+"\n");
     }
 }

@@ -1,27 +1,69 @@
 package Notification;
 
-//Concrete implementation of the EmailNotification class which extends from the abstract main.Notification class.
+import Users.UserPreferences;
+import Utils.DateHelper;
+import com.sun.mail.smtp.SMTPTransport;
+import java.util.Properties;
+import javax.mail.Message.RecipientType;
+import javax.mail.Session;
+import javax.mail.internet.InternetAddress;
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
+//Concrete implementation of the EmailNotification class which extends from the abstract Notification class.
+//The class is leveraging SpringBoot for email operations.
+
+
 public class EmailNotification extends Notification {
 
-    //Attribute to store the users email address.
-    private String userEmail;
 
-    public String getUserEmail() {
-        return userEmail;
+    //Invoking the super constructor.
+    public EmailNotification(NotificationType notificationType) {
+        super(notificationType);
     }
 
-    public void setUserEmail(String userEmail) {
-        this.setUserContact(userEmail);
-    }
+    //Given that most of the data is in userPreferences and in the Notification Object both are passed and used as required below.
+    //The Method leverages the super.messageBuilder method to frame the right message to be sent via email. Super in this case is Notification.
 
-    public void setUserContact(String userContact) {
-        this.userEmail = userContact;
-    }
+    public String sendNotification(Object notificationObject, UserPreferences userPreferences) {
 
-    //Message builder for Emails.
-    public String messageBuilder() {
-        String message = "This is an Email Notification";
-        return message;
-    }
+        //Setting up the various properties that will be required to send an email using gmail.
+        Properties emailProperty = System.getProperties();
+        emailProperty.setProperty("mail.smtp.host", "smtp.gmail.com");
+        emailProperty.setProperty("mail.smtp.port", "465");
+        emailProperty.setProperty("mail.smtp.auth", "true");
 
+        //Acquiring a mailSession using the properties defined above.
+        Session emailSession = Session.getDefaultInstance(emailProperty, null);
+
+        //Creating a transport object for type SMTP.
+        SMTPTransport transport = null;
+
+        //Runing in a try catch block to try and send an email.
+        try {
+            //Creating the various properties required for sending the email MimeMessage. Mime = Multipurpose Internet Mail Extension.
+            MimeMessage emailMessage = new MimeMessage(emailSession);
+            emailMessage.setFrom(new InternetAddress("abhijit.bhave@gmail.com"));
+            emailMessage.addRecipient(RecipientType.TO, new InternetAddress(userPreferences.getUserContactId(), false));
+            emailMessage.setSubject("Weather for tomorrow: " + DateHelper.getTomorrow());
+            emailMessage.setText(super.messageBuilder(notificationObject));
+            transport = (SMTPTransport) emailSession.getTransport("smtps");
+            //Setting the various properties for authenticating gmail.
+            transport.connect("smtp.gmail.com", "bhaveprojects", "abhijit1122");
+            //Sending the message.
+            transport.sendMessage(emailMessage, emailMessage.getAllRecipients());
+            System.out.println("Email message sent to: " + userPreferences.getUserContactId());
+            return ("Email message sent to: " + userPreferences.getUserContactId());
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                transport.close();
+            } catch (MessagingException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return null;
+    }
 }

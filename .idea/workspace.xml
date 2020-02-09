@@ -2,24 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_44.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_prominence_openweathermap_api_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20190722.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_28_0_android.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_smtp_1_4_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twilio_sdk_twilio_7_42_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_javax_mail_api_1_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_unknown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic Sequence Diagram (1).pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/EmailNotification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seqdiagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/DateHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Snow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testGenericNotification.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notifyMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notifyMe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/SmsNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/SmsNotification.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/NotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NotifyMe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Humidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Humidity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Rain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Temperature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/UvIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/UvIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Wind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Weather/ZipCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/ZipCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/NotifyMeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/NotifyMeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Humidity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Humidity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Rain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Rain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Temperature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Temperature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/UvIndex.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Wind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Wind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/ZipCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testNotifyMe.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testUserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testUserPreferences.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,22 +134,9 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NotifyMe">
-    <configuration name="NotifyMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NotifyMe" />
-      <module name="notifyMe" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.testNotification">
     <configuration name="TestFileHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="notifyMe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestFileHelper" />
       <option name="TEST_OBJECT" value="class" />
@@ -112,16 +144,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testNotifyMe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="testGenericNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="notifyMe" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testNotifyMe" />
+      <option name="MAIN_CLASS_NAME" value="testGenericNotification" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGenericNotification.testNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="notifyMe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testGenericNotification" />
+      <option name="METHOD_NAME" value="testNotification" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="notifyMe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testNotification" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,10 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NotifyMe" />
+        <item itemvalue="JUnit.testNotification" />
         <item itemvalue="JUnit.testUserPreferences" />
-        <item itemvalue="JUnit.testNotifyMe" />
         <item itemvalue="JUnit.TestFileHelper" />
+        <item itemvalue="JUnit.testGenericNotification" />
+        <item itemvalue="JUnit.testGenericNotification.testNotification" />
       </list>
     </recent_temporary>
   </component>
@@ -174,7 +220,12 @@
       <option name="presentableId" value="Default" />
       <updated>1579942851772</updated>
       <workItem from="1579942853840" duration="15502000" />
-      <workItem from="1580098799373" duration="36160000" />
+      <workItem from="1580098799373" duration="56752000" />
+      <workItem from="1580787109472" duration="14509000" />
+      <workItem from="1581106648460" duration="21000" />
+      <workItem from="1581183350145" duration="1640000" />
+      <workItem from="1581185987713" duration="10501000" />
+      <workItem from="1581209098264" duration="1476000" />
     </task>
     <servers />
   </component>
@@ -189,10 +240,12 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580587033517" />
-    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1580002072327">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1580968943902">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580002072327" />
+    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580964917177" />
+    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1580968943902" />
+    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.976@0.23.1680.976" timestamp="1580751459958" />
     <state x="458" y="188" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580067892514">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
@@ -201,96 +254,105 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="612" y="390" width="455" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1580587397162" />
-    <state x="578" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580587717349">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="578" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580711227342">
+      <screen x="0" y="23" width="1680" height="976" />
     </state>
     <state x="578" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580587717349" />
+    <state x="578" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.976@0.23.1680.976" timestamp="1580711227342" />
     <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580002341480">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1580002341480" />
-    <state width="1638" height="177" key="GridCell.Tab.0.bottom" timestamp="1580665096592">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state x="576" y="117" key="Diagram.Print.Preview.Dialog" timestamp="1581207711006">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="576" y="117" key="Diagram.Print.Preview.Dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581207711006" />
+    <state width="1638" height="370" key="GridCell.Tab.0.bottom" timestamp="1581205618587">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.bottom/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434335" />
     <state width="3398" height="381" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208077" />
-    <state width="1638" height="177" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580587787033" />
+    <state width="1638" height="370" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618587" />
+    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
     <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1580187507181" />
-    <state width="1638" height="177" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1580665096592" />
+    <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1580756154074" />
     <state width="1638" height="177" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1580629339827" />
-    <state width="1638" height="177" key="GridCell.Tab.0.center" timestamp="1580665096590">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1638" height="370" key="GridCell.Tab.0.center" timestamp="1581205618585">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.center/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434332" />
     <state width="3398" height="381" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208075" />
-    <state width="1638" height="177" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580587787031" />
+    <state width="1638" height="370" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618585" />
+    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
     <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
-    <state width="1638" height="177" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1580665096590" />
+    <state width="1638" height="315" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1580756154072" />
     <state width="1638" height="177" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1580629339824" />
-    <state width="1638" height="177" key="GridCell.Tab.0.left" timestamp="1580665096589">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1638" height="370" key="GridCell.Tab.0.left" timestamp="1581205618584">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.left/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434330" />
     <state width="3398" height="381" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208073" />
-    <state width="1638" height="177" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580587787030" />
+    <state width="1638" height="370" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618584" />
+    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
     <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1580187507179" />
-    <state width="1638" height="177" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1580665096589" />
+    <state width="1638" height="315" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1580756154071" />
     <state width="1638" height="177" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1580629339823" />
-    <state width="1638" height="177" key="GridCell.Tab.0.right" timestamp="1580665096591">
-      <screen x="0" y="23" width="1680" height="976" />
+    <state width="1638" height="370" key="GridCell.Tab.0.right" timestamp="1581205618586">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.right/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434333" />
     <state width="3398" height="381" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208076" />
-    <state width="1638" height="177" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580587787032" />
+    <state width="1638" height="370" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618586" />
+    <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
     <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
-    <state width="1638" height="177" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1580665096591" />
+    <state width="1638" height="315" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1580756154073" />
     <state width="1638" height="177" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1580629339826" />
-    <state width="1638" height="354" key="GridCell.Tab.1.bottom" timestamp="1580578336105">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="248" key="GridCell.Tab.1.bottom" timestamp="1581189035727">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1580578336105" />
-    <state width="1638" height="354" key="GridCell.Tab.1.center" timestamp="1580578336104">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="481" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461787" />
+    <state width="1638" height="248" key="GridCell.Tab.1.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035727" />
+    <state width="1638" height="248" key="GridCell.Tab.1.center" timestamp="1581189035725">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1580578336104" />
-    <state width="1638" height="354" key="GridCell.Tab.1.left" timestamp="1580578336103">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="481" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461784" />
+    <state width="1638" height="248" key="GridCell.Tab.1.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
+    <state width="1638" height="248" key="GridCell.Tab.1.left" timestamp="1581189035725">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1580578336103" />
-    <state width="1638" height="354" key="GridCell.Tab.1.right" timestamp="1580578336104">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="481" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461782" />
+    <state width="1638" height="248" key="GridCell.Tab.1.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
+    <state width="1638" height="248" key="GridCell.Tab.1.right" timestamp="1581189035726">
+      <screen x="0" y="23" width="1680" height="973" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1580578336104" />
-    <state x="614" y="279" key="Maven.ArtifactSearchDialog" timestamp="1580630355752">
+    <state width="1638" height="481" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461785" />
+    <state width="1638" height="248" key="GridCell.Tab.1.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035726" />
+    <state x="614" y="279" key="Maven.ArtifactSearchDialog" timestamp="1581191024651">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="386" y="-1057" key="Maven.ArtifactSearchDialog/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580246832231" />
-    <state x="614" y="279" key="Maven.ArtifactSearchDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580630355752" />
+    <state x="614" y="279" key="Maven.ArtifactSearchDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581191024651" />
     <state x="349" y="149" key="SettingsEditor" timestamp="1580067882136">
       <screen x="0" y="23" width="1680" height="974" />
     </state>
     <state x="349" y="149" key="SettingsEditor/0.23.1680.974@0.23.1680.974" timestamp="1580067882136" />
-    <state x="496" y="337" key="com.intellij.ide.util.TipDialog" timestamp="1580098799307">
-      <screen x="0" y="23" width="1680" height="960" />
+    <state x="496" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1581209099319">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
+    <state x="496" y="343" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581209099319" />
     <state x="496" y="337" key="com.intellij.ide.util.TipDialog/0.23.1680.960@0.23.1680.960" timestamp="1580098799307" />
     <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580000250824">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1050@0.0.1680.1050" timestamp="1580000250824" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/Notification/Notification.java</url>
-          <line>21</line>
-          <properties class="Notification.Notification" method="setUserContact">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="503" y="294" width="673" height="462" key="find.popup" timestamp="1580842227173">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="503" y="294" width="673" height="462" key="find.popup/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1580842227173" />
+    <state x="554" y="323" width="670" height="728" key="search.everywhere.popup" timestamp="1580957979739">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="554" y="323" width="670" height="728" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1580957979739" />
+    <state x="554" y="323" width="670" height="676" key="search.everywhere.popup/0.23.1680.976@0.23.1680.976" timestamp="1580755048287" />
   </component>
 </project>
