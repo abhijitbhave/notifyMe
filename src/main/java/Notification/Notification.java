@@ -32,7 +32,6 @@ public abstract class Notification<K> {
         UserPreferences userPreferences = getUserOptions();
         StringBuilder message = new StringBuilder();
         message.append("This message is for " + userPreferences.getUserFirstName() + "\n");
-        message.append("Here is the weather for tomorrow: " + DateHelper.getTomorrow());
         message.append("\n *******************************\n");
         message.append(outgoingMessage.toString());
         message.append("\n *******************************\n");

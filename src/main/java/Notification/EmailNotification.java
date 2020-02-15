@@ -13,7 +13,6 @@ import javax.mail.internet.MimeMessage;
 //Concrete implementation of the EmailNotification class which extends from the abstract Notification class.
 
 
-
 public class EmailNotification extends Notification {
 
 
@@ -37,17 +36,16 @@ public class EmailNotification extends Notification {
         Session emailSession = Session.getDefaultInstance(emailProperty, null);
 
         //Creating a transport object for type SMTP.
-        SMTPTransport transport = null;
+        //SMTPTransport transport = null;
 
         //Runing in a try catch block to try and send an email.
-        try {
+        try (SMTPTransport transport = (SMTPTransport) emailSession.getTransport("smtps")) {
             //Creating the various properties required for sending the email MimeMessage. Mime = Multipurpose Internet Mail Extension.
             MimeMessage emailMessage = new MimeMessage(emailSession);
             emailMessage.setFrom(new InternetAddress("abhijit.bhave@gmail.com"));
             emailMessage.addRecipient(RecipientType.TO, new InternetAddress(userPreferences.getUserContactId(), false));
             emailMessage.setSubject("Weather for tomorrow: " + DateHelper.getTomorrow());
             emailMessage.setText(super.messageBuilder(notificationObject));
-            transport = (SMTPTransport) emailSession.getTransport("smtps");
             //Setting the various properties for authenticating gmail.
             transport.connect("smtp.gmail.com", "bhaveprojects", "abhijit1122");
             //Sending the message.
@@ -56,12 +54,6 @@ public class EmailNotification extends Notification {
             return ("Email message sent to: " + userPreferences.getUserContactId());
         } catch (MessagingException e) {
             e.printStackTrace();
-        } finally {
-            try {
-                transport.close();
-            } catch (MessagingException e) {
-                e.printStackTrace();
-            }
         }
 
         return null;

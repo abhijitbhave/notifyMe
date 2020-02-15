@@ -61,7 +61,7 @@ public class FetchWeather {
                         resultString.append(line);
                     }
                     reader.close();
-                    //Finally creating a JSON Object leveraging the string build string.
+                    //Creating a JSON Object leveraging the string build string.
                     JSONObject weatherDump = new JSONObject(resultString.toString());
                     return weatherDump;
                 } catch (UnknownHostException e) {

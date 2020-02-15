@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="" />
+    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ClassDiagram_NotifyMe.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/objectReadWrite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/OTPConfirmation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserPreferences.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notifyMe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/notifyMe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NotifyMe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,66 +87,66 @@
       <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.testNotification">
-    <configuration name="TestFileHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestFileHelper" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGenericNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGenericNotification" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testGenericNotification.testNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testGenericNotification" />
-      <option name="METHOD_NAME" value="testNotification" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testNotification" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUserPreferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.NotifyMe">
+    <configuration name="ConfirmationWindow" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utils.ConfirmationWindow" />
       <module name="notifyMe" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="Utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotifyMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NotifyMe" />
+      <module name="notifyMe" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OTPConfirmation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Utils.OTPConfirmation" />
+      <module name="notifyMe" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testOTPConfirmation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="notifyMe" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testUserPreferences" />
+      <option name="MAIN_CLASS_NAME" value="testOTPConfirmation" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testOTPConfirmation.testGenerateOTP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="notifyMe" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testOTPConfirmation" />
+      <option name="METHOD_NAME" value="testGenerateOTP" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testNotification" />
-        <item itemvalue="JUnit.testUserPreferences" />
-        <item itemvalue="JUnit.TestFileHelper" />
-        <item itemvalue="JUnit.testGenericNotification" />
-        <item itemvalue="JUnit.testGenericNotification.testNotification" />
+        <item itemvalue="Application.NotifyMe" />
+        <item itemvalue="JUnit.testOTPConfirmation.testGenerateOTP" />
+        <item itemvalue="JUnit.testOTPConfirmation" />
+        <item itemvalue="Application.OTPConfirmation" />
+        <item itemvalue="Application.ConfirmationWindow" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +178,8 @@
       <workItem from="1581106648460" duration="21000" />
       <workItem from="1581183350145" duration="1640000" />
       <workItem from="1581185987713" duration="10501000" />
-      <workItem from="1581209098264" duration="1665000" />
+      <workItem from="1581209098264" duration="22640000" />
+      <workItem from="1581723788603" duration="3768000" />
     </task>
     <servers />
   </component>
@@ -176,10 +194,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580587033517" />
-    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser" timestamp="1580968943902">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1581354554506">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1580964917177" />
+    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1581354554506" />
     <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1580968943902" />
     <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.976@0.23.1680.976" timestamp="1580751459958" />
     <state x="458" y="188" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1580067892514">
@@ -203,66 +221,78 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="576" y="117" key="Diagram.Print.Preview.Dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581207711006" />
-    <state width="1638" height="370" key="GridCell.Tab.0.bottom" timestamp="1581205618587">
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom" timestamp="1581737804869">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.bottom/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434335" />
     <state width="3398" height="381" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208077" />
-    <state width="1638" height="370" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618587" />
+    <state width="1638" height="483" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581445198334" />
+    <state width="1638" height="279" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593638" />
     <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1580187507181" />
-    <state width="1638" height="315" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1580756154074" />
+    <state width="1638" height="263" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1581305088481" />
+    <state width="1638" height="483" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581614058838" />
     <state width="1638" height="177" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1580629339827" />
-    <state width="1638" height="370" key="GridCell.Tab.0.center" timestamp="1581205618585">
+    <state width="1638" height="346" key="GridCell.Tab.0.bottom/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804869" />
+    <state width="1638" height="346" key="GridCell.Tab.0.center" timestamp="1581737804866">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.center/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434332" />
     <state width="3398" height="381" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208075" />
-    <state width="1638" height="370" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618585" />
+    <state width="1638" height="483" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581445198331" />
+    <state width="1638" height="279" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593636" />
     <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
-    <state width="1638" height="185" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
-    <state width="1638" height="315" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1580756154072" />
+    <state width="1638" height="263" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1581305088480" />
+    <state width="1638" height="483" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1581614058836" />
     <state width="1638" height="177" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1580629339824" />
-    <state width="1638" height="370" key="GridCell.Tab.0.left" timestamp="1581205618584">
+    <state width="1638" height="346" key="GridCell.Tab.0.center/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804866" />
+    <state width="1638" height="346" key="GridCell.Tab.0.left" timestamp="1581737804864">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.left/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434330" />
     <state width="3398" height="381" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208073" />
-    <state width="1638" height="370" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618584" />
+    <state width="1638" height="483" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581445198329" />
+    <state width="1638" height="279" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593635" />
     <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
-    <state width="1638" height="185" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1580187507179" />
-    <state width="1638" height="315" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1580756154071" />
+    <state width="1638" height="263" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1581305088479" />
+    <state width="1638" height="483" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1581614058833" />
     <state width="1638" height="177" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1580629339823" />
-    <state width="1638" height="370" key="GridCell.Tab.0.right" timestamp="1581205618586">
+    <state width="1638" height="346" key="GridCell.Tab.0.left/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804864" />
+    <state width="1638" height="346" key="GridCell.Tab.0.right" timestamp="1581737804867">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="185" key="GridCell.Tab.0.right/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434333" />
     <state width="3398" height="381" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208076" />
-    <state width="1638" height="370" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581205618586" />
+    <state width="1638" height="483" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581445198332" />
+    <state width="1638" height="279" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593637" />
     <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
-    <state width="1638" height="185" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1580187507180" />
-    <state width="1638" height="315" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1580756154073" />
+    <state width="1638" height="263" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1581305088480" />
+    <state width="1638" height="483" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1581614058837" />
     <state width="1638" height="177" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1580629339826" />
-    <state width="1638" height="248" key="GridCell.Tab.1.bottom" timestamp="1581189035727">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="346" key="GridCell.Tab.0.right/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804867" />
+    <state width="1638" height="279" key="GridCell.Tab.1.bottom" timestamp="1581661593641">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="481" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461787" />
+    <state width="1638" height="279" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593641" />
     <state width="1638" height="248" key="GridCell.Tab.1.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035727" />
-    <state width="1638" height="248" key="GridCell.Tab.1.center" timestamp="1581189035725">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="279" key="GridCell.Tab.1.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581658343795" />
+    <state width="1638" height="279" key="GridCell.Tab.1.center" timestamp="1581661593639">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="481" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461784" />
+    <state width="1638" height="279" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593639" />
     <state width="1638" height="248" key="GridCell.Tab.1.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
-    <state width="1638" height="248" key="GridCell.Tab.1.left" timestamp="1581189035725">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="279" key="GridCell.Tab.1.center/0.23.1680.976@0.23.1680.976" timestamp="1581658343793" />
+    <state width="1638" height="279" key="GridCell.Tab.1.left" timestamp="1581661593639">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="481" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461782" />
+    <state width="1638" height="279" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593639" />
     <state width="1638" height="248" key="GridCell.Tab.1.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
-    <state width="1638" height="248" key="GridCell.Tab.1.right" timestamp="1581189035726">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="1638" height="279" key="GridCell.Tab.1.left/0.23.1680.976@0.23.1680.976" timestamp="1581658343792" />
+    <state width="1638" height="279" key="GridCell.Tab.1.right" timestamp="1581661593640">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="481" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581185461785" />
+    <state width="1638" height="279" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1581661593640" />
     <state width="1638" height="248" key="GridCell.Tab.1.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035726" />
+    <state width="1638" height="279" key="GridCell.Tab.1.right/0.23.1680.976@0.23.1680.976" timestamp="1581658343794" />
     <state x="614" y="279" key="Maven.ArtifactSearchDialog" timestamp="1581191024651">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -281,11 +311,12 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1050@0.0.1680.1050" timestamp="1580000250824" />
-    <state x="503" y="294" width="673" height="462" key="find.popup" timestamp="1581215480507">
+    <state x="503" y="294" width="673" height="462" key="find.popup" timestamp="1581737533853">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="503" y="294" width="673" height="462" key="find.popup/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1580842227173" />
-    <state x="503" y="294" width="673" height="462" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581215480507" />
+    <state x="503" y="294" width="673" height="462" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581724784659" />
+    <state x="503" y="294" width="673" height="462" key="find.popup/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737533853" />
     <state x="554" y="323" width="670" height="728" key="search.everywhere.popup" timestamp="1580957979739">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
