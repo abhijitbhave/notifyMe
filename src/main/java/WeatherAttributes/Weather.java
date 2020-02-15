@@ -1,5 +1,6 @@
 package WeatherAttributes;
 
+import Utils.DateHelper;
 import org.json.JSONObject;
 
 //The all inclusive class for various weather components.
@@ -90,7 +91,7 @@ public class Weather<T> {
 
     public String toString() {
         StringBuilder weatherString = new StringBuilder();
-        weatherString.append("\nWEATHER:\nOverAll Weather: ");
+        weatherString.append("\nWEATHER for "+ DateHelper.getTomorrow()+" :\nOverAll Weather: ");
         String builder = null;
         builder = (primaryWeather == null)?"None":primaryWeather;
         weatherString.append(primaryWeather + "\n");

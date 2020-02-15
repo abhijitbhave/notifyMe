@@ -7,6 +7,9 @@ import WeatherUtils.FetchWeather;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import javafx.application.Application;
 
 
 //The Menu class. Could be extended in the future.
@@ -41,10 +44,6 @@ public class Menu {
             FetchWeather fetchWeather = new FetchWeather();
             Weather weather = fetchWeather.setWeatherAttributes();
             notificationHelper.complieNotification(weather, userPreferences);
-
-//            Notification notification = new SmsNotification(NotificationType.SMS);
-//            notification.sendNotifiation(weather, userPreferences);
-            //To be implemented;
         } else {
             System.out.println("Invalid choice.");
             mainMenu();
@@ -95,26 +94,46 @@ public class Menu {
         String userContactID = null;
         if (up.getUserContactPreference() == "Email") {
             userContactID = console.next();
-            if ((!userContactID.contains("@"))) {
+            Pattern emailAddressPattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
+            if(!emailAddressPattern.matcher(userContactID).matches()){
                 do {
                     System.out.println("Please provide a valid email id");
                     userContactID = console.next();
                 }
-                while ((!userContactID.contains("@")));
+                while (!emailAddressPattern.matcher(userContactID).matches());
             }
 
         } else if (up.getUserContactPreference() == "Sms") {
             userContactID = console.next();
-            if (!userContactID.matches("\\d{10}")) {
+            Pattern phoneNumberPattern = Pattern.compile("^\\(?([0-9]{3})\\)?[-.\\s]?([0-9]{3})[-.\\s]?([0-9]{4})$");
+            if (!phoneNumberPattern.matcher(userContactID).matches()) {
                 do {
-                    System.out.println("Please provide a valid phone number without spaces or dashes id");
+                    System.out.println("Please provide a valid phone number");
                     userContactID = console.next();
                 }
-                while (!userContactID.matches("\\d{10}"));
+                while (!phoneNumberPattern.matcher(userContactID).matches());
             }
 
         }
         up.setUserContactId(userContactID);
+        //Introducing OTP validation of user. Ensures that user is in possession of the cell phone or the email address prior to sending data.
+        OTPConfirmation otpConfirmation = new OTPConfirmation();
+        otpConfirmation.sendOtp(up);
+        //Once OTP is sent to device, launching the JavaFx UI to allow user to validate the information.
+        javafx.application.Application.launch(OTPConfirmation.class);
+
+        //Code for future assignment.calling out the application using threads.
+        //        Runnable otpTask = () -> {
+//            javafx.application.Application.launch(OTPConfirmation.class);
+//        };
+//        try {
+//            new Thread(otpTask).start();
+//            new Thread(otpTask).join();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+
+
         //System.out.println("Enter contact till date");
         //up.setUserContactUntilDate(console.next());
 
@@ -148,9 +167,13 @@ public class Menu {
         //Once the user has selected the required options, persisting the data to the properties file using the FileHelper class and
         //returninng to main menu
         up.setSelectedWeatherConditions(weatherConditions);
+
         System.out.println(
-            "You have selected to be notified by: " + up.getUserContactPreference() + " for the following weather conditions: \n" + up
-                .getSelectedWeatherConditions().toString()+"\n");
+            "You have selected to be notified by: " + up.getUserContactPreference() + "\n");
+        //Use of lambda for printing the various weather conditions selected by the user from an ArrayList.
+        up.getSelectedWeatherConditions()
+            .forEach((weather) -> System.out.println(weather + " Is one of the selected weather conditions"));
+        System.out.println("\n");
         FileHelper fh = new FileHelper();
         fh.writeUserPreferences(up);
         mainMenu();

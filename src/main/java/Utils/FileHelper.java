@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 import java.util.Properties;
 
 
@@ -19,10 +20,9 @@ public class FileHelper {
     //Leveraging the Java Properties dictionary to create Properties (text) file to be able to store data.
     public void writeUserPreferences(UserPreferences userPreferences) {
         //OutputStream to be able to write to the file.
-        OutputStream outStream = null;
-        try {
+
+        try (OutputStream outStream = new FileOutputStream(fileName)) {
             //Using the Java properties framework to set user preferences into the properties file.
-            outStream = new FileOutputStream(fileName);
             Properties userPrefProp = new Properties();
             userPrefProp.setProperty("userFirstName", userPreferences.getUserFirstName());
             userPrefProp.setProperty("userLastName", userPreferences.getUserLastName());
@@ -36,7 +36,7 @@ public class FileHelper {
 
         }
         //Catching various exceptions that can be thrown by file management.
-        // Also included a finally block to close the file which can have its own exception in the catch block.
+        //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
         catch (FileNotFoundException e) {
             try {
                 throw new NotifyMeException(e.getMessage());
@@ -49,18 +49,6 @@ public class FileHelper {
             } catch (NotifyMeException ex) {
                 ex.printStackTrace();
             }
-        } finally {
-            try {
-                System.out.println("Completed the call to write to file for user: " + userPreferences.getUserFirstName());
-                outStream.close();
-            } catch (IOException e) {
-                try {
-                    throw new NotifyMeException(e.getMessage());
-                } catch (NotifyMeException ex) {
-                    ex.printStackTrace();
-                }
-            }
-
         }
 
     }
@@ -69,11 +57,10 @@ public class FileHelper {
     //Leveraging the Java properties framework to read from a file (text) and store the data in the relevant object.
     public UserPreferences readUserPreferences() {
         //Creating an instance of the object to be enriched.
+       // ArrayList<UserPreferences> userList = new ArrayList<UserPreferences>();
         UserPreferences userPreferences = new UserPreferences();
-        InputStream inStream = null;
         //Will read the various properties and leveraging the getters from the Object class enriching this instance of this object.
-        try {
-            inStream = new FileInputStream(fileName);
+        try (InputStream inStream = new FileInputStream(fileName)) {
             Properties userPrefProp = new Properties();
             userPrefProp.load(inStream);
             userPreferences.setUserFirstName(userPrefProp.getProperty("userFirstName"));
@@ -83,7 +70,7 @@ public class FileHelper {
             userPreferences.setSelectedWeatherConditions(userPrefProp.getProperty("selectedWeatherConditions"));
         }
         //Catching various exceptions that can be thrown by file management.
-        // Also included a finally block to close the file which can have its own exception in the catch block.
+        //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
         catch (FileNotFoundException e) {
             try {
                 throw new NotifyMeException(e.getMessage());
@@ -96,23 +83,8 @@ public class FileHelper {
             } catch (NotifyMeException ex) {
                 ex.printStackTrace();
             }
-        } finally {
-            try {
-                if (inStream != null) {
-                    inStream.close();
-                }
-
-            } catch (IOException e) {
-                try {
-                    throw new NotifyMeException(e.getMessage());
-                } catch (NotifyMeException ex) {
-                    ex.printStackTrace();
-                }
-            }
-
-
         }
-        //Finally returning an object of type UserPreference.
+        //Returning an object of type UserPreference.
         return userPreferences;
     }
 
