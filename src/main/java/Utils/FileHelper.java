@@ -36,7 +36,7 @@ public class FileHelper {
 
         }
         //Catching various exceptions that can be thrown by file management.
-        //Leveraging a try with approach to ensure that the file is closed regardless of the behaviour.
+        //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
         catch (FileNotFoundException e) {
             try {
                 throw new NotifyMeException(e.getMessage());
@@ -70,7 +70,7 @@ public class FileHelper {
             userPreferences.setSelectedWeatherConditions(userPrefProp.getProperty("selectedWeatherConditions"));
         }
         //Catching various exceptions that can be thrown by file management.
-        //Leveraging a try with approach to ensure that the file is closed regardless of the behaviour.
+        //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
         catch (FileNotFoundException e) {
             try {
                 throw new NotifyMeException(e.getMessage());

@@ -56,11 +56,11 @@ public class OTPConfirmation extends Application {
         TextField inputString = new TextField();
         //Creating a button with the text "Validate" for user to click and validate OTP.
         Button button = new Button("Validate");
-        //When the button is clicked by the user, the following labmda function will be executed.
+        //When the button is clicked by the user, the following lambda function will be executed.
         //Primarily the lambda calls the validateOTP() method to validate if the user entered OTP matches the one that was generated.
         //If the two match, an alert window will be shown which will confirm the validation and present an OK button.
         // Once the user clicks the OK button the notifyMe application will continue with its menu.
-        //If the OTPs dont match, the else loop will be called and the user will see an alert window with the confirmation that validation failed.
+        //If the OTPs don't match, the else loop will be called and the user will see an alert window with the confirmation that validation failed.
         //The user will have an option to retry validation.
         button.setOnAction(e -> {
             if (validateOTP(generatedOTP, Long.parseLong(inputString.getText()))) {
@@ -109,7 +109,7 @@ public class OTPConfirmation extends Application {
 
     //A method in the class which leverages Streams to generate SecureRandom numbers.
     //We are leveraging int streams here where we create random 6 numbers between 0 and 99.
-    //The streams are mapping the object to Strings since in future we may want to geneate a alphanumeric code.
+    //The streams are mapping the object to Strings since in future we may want to generate  a alphanumeric code.
     public long generateOtp() {
         SecureRandom randomNumbers = new SecureRandom();
         String optNumbers = randomNumbers.ints(6, 0, 99)
