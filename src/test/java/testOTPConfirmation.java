@@ -26,6 +26,9 @@ public class testOTPConfirmation {
     public void testGenerateOTP() {
         Class classObject = OTPConfirmation.class;
         Method[] methods =  classObject.getMethods();
+        // Using streams to iterate through the various class methods returned by the Reflections
+        // function to identify the return type of the generateOtp method. We need to ensure that in future someone
+        // doesn’t change the return type of the method to something other than Long.
         Arrays.stream(methods).forEach(method -> {
             if(method.getName().equals("generateOtp")){
                 Class returnType = method.getReturnType();
