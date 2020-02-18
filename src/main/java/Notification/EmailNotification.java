@@ -45,7 +45,7 @@ public class EmailNotification extends Notification {
             emailMessage.setFrom(new InternetAddress("abhijit.bhave@gmail.com"));
             emailMessage.addRecipient(RecipientType.TO, new InternetAddress(userPreferences.getUserContactId(), false));
             emailMessage.setSubject("Weather for tomorrow: " + DateHelper.getTomorrow());
-            emailMessage.setText(super.messageBuilder(notificationObject));
+            emailMessage.setText(super.messageBuilder(notificationObject, userPreferences));
             //Setting the various properties for authenticating gmail.
             transport.connect("smtp.gmail.com", "bhaveprojects", "abhijit1122");
             //Sending the message.

@@ -9,6 +9,7 @@ import java.util.Date;
 
 public class UserPreferences {
 
+    private String userId;
     private String userFirstName;
     private String userLastName;
     private String userContactPreference;
@@ -69,6 +70,10 @@ public class UserPreferences {
         return userContactUntilDate;
     }
 
+    public String getUserId() { return userId; }
+
+    public void setUserId(String userId) { this.userId = userId; }
+
 //    public void setUserContactUntilDate(String date) {
 //        if (date != "" || date != " ") {
 //            LocalTime userContactUntilDate = LocalTime.parse(date);
@@ -79,13 +84,15 @@ public class UserPreferences {
 
     @Override
     public String toString() {
-        return "UserPreferences{" +
-            "userFirstName='" + userFirstName + '\'' +
+        return
+            "userId='" + userId + '\'' +
+            ", userFirstName='" + userFirstName + '\'' +
             ", userLastName='" + userLastName + '\'' +
             ", userContactPreference='" + userContactPreference + '\'' +
             ", userContactId='" + userContactId + '\'' +
             ", userContactUntilDate=" + userContactUntilDate +
-            ", selectedWeatherConditions=" + selectedWeatherConditions +
-            '}';
+            ", selectedWeatherConditions=" + selectedWeatherConditions;
     }
+
+
 }

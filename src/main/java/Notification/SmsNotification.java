@@ -23,7 +23,7 @@ public class SmsNotification extends Notification {
 
         Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
         Message message = Message.creator(new PhoneNumber((userPreferences.getUserContactId())),
-            new PhoneNumber("+12053089430"), super.messageBuilder(notificationObject.toString())).create();
+            new PhoneNumber("+12053089430"), super.messageBuilder(notificationObject.toString(), userPreferences)).create();
         System.out.println("Sent message with sid: " + message.getSid());
         return
             ("Sent message with sid: " + message.getSid());

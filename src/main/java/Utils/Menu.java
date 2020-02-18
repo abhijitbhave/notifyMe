@@ -1,27 +1,63 @@
 package Utils;
 
 import Notification.NotificationHelper;
+import Persistence.*;
 import Users.UserPreferences;
 import WeatherAttributes.Weather;
 import WeatherUtils.FetchWeather;
+import database.DatabaseHelper;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
+import java.util.Properties;
 import java.util.Scanner;
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javafx.application.Application;
 
 
 //The Menu class. Could be extended in the future.
 public class Menu {
 
+
+    Persistence persistence = null;
+    ArrayList<UserPreferences> userPreferencesList = null;
+
+
+    public Menu() {
+        String fileName = "application.properties";
+        try (InputStream inStream = new FileInputStream(fileName)) {
+            Properties dataPersistenceProperties = new Properties();
+            dataPersistenceProperties.load(inStream);
+            String dataPersistanceFlag = dataPersistenceProperties.getProperty("dataPersistenceType");
+            PersistenceType persistenceType = null;
+            if (dataPersistanceFlag.toUpperCase().matches("DATABASE")) {
+                persistenceType = PersistenceType.DATABASE;
+            } else if (dataPersistanceFlag.toUpperCase().matches("FILE")) {
+                persistenceType = PersistenceType.FILE;
+            } else {
+                persistenceType = null;
+            }
+            PersistenceFactory persistenceFactory = new PersistenceFactory();
+            this.persistence = persistenceFactory.buildPersistenceLayer(persistenceType);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     //The main menu will allow the user to either register a user or create a notification.
     public void mainMenu() {
         Scanner console = new Scanner(System.in);
+        //ArrayList<UserPreferences> userPreferences = null;
         System.out.println("Welcome to the notifyMe application.");
         System.out.println("Select an option");
         System.out.println("1. Register User.");
-        System.out.println("2. Notify User. \n");
+        System.out.println("2. Notify User");
+        System.out.println("3. List Registered Users");
+        System.out.println("4. Delete Registered User \n");
         Integer choice = console.nextInt();
         if (choice == 1) {
             //If user selected to register User, then running that option.
@@ -30,21 +66,39 @@ public class Menu {
         } else if (choice == 2) {
             //If user chose to send notification, first checking if a user is registered.
             //Note at this point only one user can be registered.
-            FileHelper fh = new FileHelper();
-            UserPreferences userPreferences = fh.readUserPreferences();
+            userPreferencesList = persistence.getUserPreferences();
             //If user is not registered then running menu to register user.
-            if (userPreferences.getUserFirstName() == null) {
+            if (userPreferencesList == null || userPreferencesList.size() == 0) {
                 System.out.println("\nDid not find any registered users.");
                 System.out.println("Please register a user.\n");
                 registerUser();
             }
             //If user is registered, then will call the notification flow, to be implemented.
-            System.out.println("You have selected to Notify user " + userPreferences.getUserFirstName());
-            NotificationHelper notificationHelper = new NotificationHelper();
-            FetchWeather fetchWeather = new FetchWeather();
-            Weather weather = fetchWeather.setWeatherAttributes();
-            notificationHelper.complieNotification(weather, userPreferences);
-        } else {
+            System.out.println("You have selected to Notify users: ");
+            userPreferencesList.forEach(userPreferences -> {
+                System.out.println(userPreferences.getUserFirstName());
+                NotificationHelper notificationHelper = new NotificationHelper();
+                FetchWeather fetchWeather = new FetchWeather();
+                Weather weather = fetchWeather.setWeatherAttributes();
+                notificationHelper.complieNotification(weather, userPreferences);
+            });
+        }
+        else if (choice == 3){
+            System.out.println("You have selected to List all Registered Users");
+            ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
+            userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
+            mainMenu();
+        }
+        else if (choice == 4){
+            System.out.println("You have selected to Delete a Registered Users");
+            ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
+            userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
+            System.out.println("Please enter the UserID you wish to delete");
+            Integer userId = console.nextInt();
+            persistence.deleteUserPreferences(userId);
+            mainMenu();
+        }
+        else {
             System.out.println("Invalid choice.");
             mainMenu();
         }
@@ -95,7 +149,7 @@ public class Menu {
         if (up.getUserContactPreference() == "Email") {
             userContactID = console.next();
             Pattern emailAddressPattern = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
-            if(!emailAddressPattern.matcher(userContactID).matches()){
+            if (!emailAddressPattern.matcher(userContactID).matches()) {
                 do {
                     System.out.println("Please provide a valid email id");
                     userContactID = console.next();
@@ -133,7 +187,6 @@ public class Menu {
 //            e.printStackTrace();
 //        }
 
-
         //System.out.println("Enter contact till date");
         //up.setUserContactUntilDate(console.next());
 
@@ -160,8 +213,6 @@ public class Menu {
                 default:
                     System.out.println("Select a value between 1 and 4");
             }
-
-
         }
         while (menuChoice != 4);
         //Once the user has selected the required options, persisting the data to the properties file using the FileHelper class and
@@ -174,8 +225,7 @@ public class Menu {
         up.getSelectedWeatherConditions()
             .forEach((weather) -> System.out.println(weather + " Is one of the selected weather conditions"));
         System.out.println("\n");
-        FileHelper fh = new FileHelper();
-        fh.writeUserPreferences(up);
+        persistence.setUserPreferences(up);
         mainMenu();
     }
 

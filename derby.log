@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Feb 16 00:02:26 PST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.3.0 - (1405108): instance a816c00e-0170-4d05-1f31-00000dd19958 
+on database directory /Users/abhave/Code/Personal/BU/notifyMe/weatherDB  with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/Users/abhave/.m2/repository/org/apache/derby/derby/10.8.3.0/derby-10.8.3.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_212-b10
+user.dir=/Users/abhave/Code/Personal/BU/notifyMe
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.14.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

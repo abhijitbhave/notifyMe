@@ -11,12 +11,14 @@ public class TestFileHelper {
 
     FileHelper fh = new FileHelper();
     UserPreferences up = new UserPreferences();
+    ArrayList<UserPreferences> userPreferencesList = new ArrayList<>();
     ArrayList<String> weather = new ArrayList<String>();
 
 
     //Testing the creation of the userPreferences file.
     @Test
     public void testWriteUserPreferences() {
+        up.setUserId("1");
         up.setUserFirstName("Tom");
         up.setUserLastName("Brady");
         up.setUserContactPreference("Sms");
@@ -37,13 +39,16 @@ public class TestFileHelper {
 
     @Test
     public void testReadUserPreferences() {
-        up = fh.readUserPreferences();
-        assertEquals(up.getUserFirstName(), "Tom");
-        assertEquals(up.getUserLastName(), "Brady");
-        assertEquals(up.getUserContactPreference(), "Sms");
-        assertTrue(up.getSelectedWeatherConditions() instanceof ArrayList);
-        assertTrue(up.getSelectedWeatherConditions().containsAll(weather));
-        assertEquals(up.getUserContactId(), "1234567890");
+        userPreferencesList = fh.readUserPreferences();
+        userPreferencesList.forEach(userPreferences -> {
+            assertEquals(userPreferences.getUserFirstName(), "Tom");
+            assertEquals(userPreferences.getUserLastName(), "Brady");
+            assertEquals(userPreferences.getUserContactPreference(), "Sms");
+            assertTrue(userPreferences.getSelectedWeatherConditions() instanceof ArrayList);
+            assertTrue(userPreferences.getSelectedWeatherConditions().containsAll(weather));
+            assertEquals(userPreferences.getUserContactId(), "1234567890");
+        });
+
 
 
     }

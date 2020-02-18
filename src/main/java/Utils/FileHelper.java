@@ -1,6 +1,7 @@
 package Utils;
 
 import Users.UserPreferences;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -17,13 +18,18 @@ public class FileHelper {
     private String fileName = "UserPreferences.properties";
 
 
+    public boolean checkIfFileExistsI(){
+        File file = new File(fileName);
+        return file.exists();
+    }
     //Leveraging the Java Properties dictionary to create Properties (text) file to be able to store data.
-    public void writeUserPreferences(UserPreferences userPreferences) {
+    public boolean writeUserPreferences(UserPreferences userPreferences) {
         //OutputStream to be able to write to the file.
 
         try (OutputStream outStream = new FileOutputStream(fileName)) {
             //Using the Java properties framework to set user preferences into the properties file.
             Properties userPrefProp = new Properties();
+            userPrefProp.setProperty("userID", "1");
             userPrefProp.setProperty("userFirstName", userPreferences.getUserFirstName());
             userPrefProp.setProperty("userLastName", userPreferences.getUserLastName());
             userPrefProp.setProperty("userContactPreference", userPreferences.getUserContactPreference());
@@ -33,7 +39,7 @@ public class FileHelper {
                 (userPreferences.getUserContactUntilDate() == null) ? "NA" : userPreferences.getUserContactUntilDate().toString());
             userPrefProp.setProperty("selectedWeatherConditions", userPreferences.getSelectedWeatherConditions().toString());
             userPrefProp.store(outStream, "");
-
+            return true;
         }
         //Catching various exceptions that can be thrown by file management.
         //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
@@ -50,24 +56,27 @@ public class FileHelper {
                 ex.printStackTrace();
             }
         }
-
+        return false;
     }
 
 
     //Leveraging the Java properties framework to read from a file (text) and store the data in the relevant object.
-    public UserPreferences readUserPreferences() {
+    public ArrayList<UserPreferences> readUserPreferences() {
         //Creating an instance of the object to be enriched.
-       // ArrayList<UserPreferences> userList = new ArrayList<UserPreferences>();
+       ArrayList<UserPreferences> userList = new ArrayList<UserPreferences>();
         UserPreferences userPreferences = new UserPreferences();
         //Will read the various properties and leveraging the getters from the Object class enriching this instance of this object.
         try (InputStream inStream = new FileInputStream(fileName)) {
-            Properties userPrefProp = new Properties();
-            userPrefProp.load(inStream);
-            userPreferences.setUserFirstName(userPrefProp.getProperty("userFirstName"));
-            userPreferences.setUserLastName(userPrefProp.getProperty("userLastName"));
-            userPreferences.setUserContactPreference(userPrefProp.getProperty("userContactPreference"));
-            userPreferences.setUserContactId(userPrefProp.getProperty("userContactId"));
-            userPreferences.setSelectedWeatherConditions(userPrefProp.getProperty("selectedWeatherConditions"));
+            Properties userPrefProps = new Properties();
+            userPrefProps.load(inStream);
+            userPreferences.setUserId(userPrefProps.getProperty("userId"));
+            userPreferences.setUserFirstName(userPrefProps.getProperty("userFirstName"));
+            userPreferences.setUserLastName(userPrefProps.getProperty("userLastName"));
+            userPreferences.setUserContactPreference(userPrefProps.getProperty("userContactPreference"));
+            userPreferences.setUserContactId(userPrefProps.getProperty("userContactId"));
+            userPreferences.setSelectedWeatherConditions(userPrefProps.getProperty("selectedWeatherConditions"));
+            userList.add(userPreferences);
+            return userList;
         }
         //Catching various exceptions that can be thrown by file management.
         //Leveraging a try with approach to ensure that the file is closed regardless of the behavior.
@@ -85,7 +94,7 @@ public class FileHelper {
             }
         }
         //Returning an object of type UserPreference.
-        return userPreferences;
+        return null;
     }
 
 }

@@ -15,7 +15,7 @@ public class testGenericNotification {
     public void testGenericSmsNotification() {
         String message = "This is a TEST message";
         notification = new SmsNotification(NotificationType.SMS);
-        assertTrue(notification.messageBuilder(message).contains("TEST"));
+        assertTrue(notification.messageBuilder(message, null).contains("TEST"));
 
     }
 
@@ -23,7 +23,7 @@ public class testGenericNotification {
     public void testGenericEmailNotification() {
         String message = "This is a TEST message";
         notification = new EmailNotification(NotificationType.EMAIL);
-        assertTrue(notification.messageBuilder(message).contains("TEST"));
+        assertTrue(notification.messageBuilder(message, null).contains("TEST"));
     }
 
 }

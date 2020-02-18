@@ -5,6 +5,7 @@ import Notification.SmsNotification;
 import Notification.NotificationFactory;
 import Users.UserPreferences;
 import Utils.FileHelper;
+import java.util.ArrayList;
 import java.util.logging.FileHandler;
 import org.junit.Test;
 
@@ -12,7 +13,8 @@ import static org.junit.Assert.*;
 
 public class testNotification {
 
-    UserPreferences userPreferences = new FileHelper().readUserPreferences();
+
+    UserPreferences userPreferences =null;
 
     //Testing sending SMS. the assumption is that if we see "Sid" returned then the SMS was sent out.
     @Test
