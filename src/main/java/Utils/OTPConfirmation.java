@@ -71,6 +71,11 @@ public class OTPConfirmation extends Application {
                 alterButton.setOnAction(a -> {
                     alertWindow.close();
                     Platform.exit();
+                    try {
+                        stop();
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
                 });
                 VBox alertLayout = new VBox(10);
                 alertLayout.setPadding(new Insets(20, 20, 20, 20));
@@ -82,18 +87,15 @@ public class OTPConfirmation extends Application {
                 Stage alertWindow = new Stage();
                 alertWindow.initModality(Modality.APPLICATION_MODAL);
                 Label label = new Label("Failed Validation");
-                Button alterButton = new Button("Retry");
-                alterButton.setOnAction(a -> {
+                Button retryButton = new Button("Retry");
+                //Button cancelButton = new Button("Cancel");
+                retryButton.setOnAction(a -> {
                     alertWindow.close();
-                    try {
-                        start(otpWindow);
-                    } catch (Exception ex) {
-                        ex.printStackTrace();
-                    }
                 });
+
                 VBox alertLayout = new VBox(10);
                 alertLayout.setPadding(new Insets(20, 20, 20, 20));
-                alertLayout.getChildren().addAll(label, alterButton);
+                alertLayout.getChildren().addAll(label, retryButton);
                 Scene alertScene = new Scene(alertLayout, 300, 200);
                 otpWindow.setScene(alertScene);
                 otpWindow.show();

@@ -15,7 +15,7 @@ public class NotificationHelper<K> {
 
         //Leveraging the Notification Factory class to build the right notification object based on the users preferences.
         //IF the type is set to Sms a SMSNotification object is created, else if the type is set to Email an EmailNotification object is created.
-        Notification notification = null;
+
         NotificationType notificationType = null;
         if (userPreferences.getUserContactPreference().toUpperCase().matches("SMS")) {
             notificationType = NotificationType.SMS;
@@ -24,6 +24,7 @@ public class NotificationHelper<K> {
         } else {
             notificationType = null;
         }
+        Notification notification;
         notification = NotificationFactory.buildNotification(notificationType);
         notification.sendNotification(notificaitonObject, userPreferences);
 

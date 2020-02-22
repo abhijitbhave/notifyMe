@@ -27,11 +27,6 @@ public class Sun {
         this.sunSet = sunSet;
     }
 
-    //DateFormat dateFormat = new SimpleDateFormat("HH:mm");
-    //dateFormat.setTimeZone(TimeZone.getTimeZone("PST"));
-    //String formatted = dateFormat.format(date);
-    //System.out.println(formatted);
-
     public String toString() {
         DateFormat dateFormat = new SimpleDateFormat("HH:mm");
         dateFormat.setTimeZone(TimeZone.getTimeZone("PST"));

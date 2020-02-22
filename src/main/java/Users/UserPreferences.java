@@ -1,6 +1,6 @@
 package Users;
 
-import java.time.LocalTime;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -9,12 +9,15 @@ import java.util.Date;
 
 public class UserPreferences {
 
+    private String userId;
     private String userFirstName;
     private String userLastName;
     private String userContactPreference;
     private String userContactId;
-    private Date userContactUntilDate;
     private ArrayList<String> selectedWeatherConditions = new ArrayList<String>();
+    private Integer zipCode;
+    private Integer isDeleted;
+
 
     public ArrayList<String> getSelectedWeatherConditions() {
         return selectedWeatherConditions;
@@ -28,6 +31,7 @@ public class UserPreferences {
             this.selectedWeatherConditions.add(weather);
         }
     }
+
     //Overloading for set weather conditions from Menu.
     public void setSelectedWeatherConditions(ArrayList<String> weatherConditions) {
         this.selectedWeatherConditions = weatherConditions;
@@ -65,27 +69,29 @@ public class UserPreferences {
         this.userContactId = userContactId;
     }
 
-    public Date getUserContactUntilDate() {
-        return userContactUntilDate;
-    }
+    public String getUserId() {return userId;}
 
-//    public void setUserContactUntilDate(String date) {
-//        if (date != "" || date != " ") {
-//            LocalTime userContactUntilDate = LocalTime.parse(date);
-//        } else {
-//            userContactUntilDate = null;
-//        }
-//    }
+    public void setUserId(String userId) {this.userId = userId;}
+
+    public Integer getZipCode() {return zipCode;}
+
+    public void setZipCode(Integer zipCode) {this.zipCode = zipCode;}
+
+    public Integer getIsDeleted() {return isDeleted;}
+
+    public void setIsDeleted(Integer isDeleted) {this.isDeleted = isDeleted;}
 
     @Override
     public String toString() {
-        return "UserPreferences{" +
-            "userFirstName='" + userFirstName + '\'' +
-            ", userLastName='" + userLastName + '\'' +
-            ", userContactPreference='" + userContactPreference + '\'' +
-            ", userContactId='" + userContactId + '\'' +
-            ", userContactUntilDate=" + userContactUntilDate +
-            ", selectedWeatherConditions=" + selectedWeatherConditions +
-            '}';
+        return
+            "userId='" + userId + '\'' +
+                ", userFirstName='" + userFirstName + '\'' +
+                ", userLastName='" + userLastName + '\'' +
+                ", userContactPreference='" + userContactPreference + '\'' +
+                ", userContactId='" + userContactId + '\'' +
+                ", selectedWeatherConditions=" + selectedWeatherConditions +
+                ", zipCode = " + zipCode;
     }
+
+
 }
