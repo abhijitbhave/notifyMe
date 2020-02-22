@@ -3,7 +3,7 @@ import Notification.*;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class testGenericNotification {
+public class TestGenericNotification {
 
 
     //Testing the Generic message builder method. The idea here is that since the method accepts a Generic datatype, as long as the datatype has a

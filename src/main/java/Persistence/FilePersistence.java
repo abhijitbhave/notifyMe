@@ -2,14 +2,13 @@ package Persistence;
 
 import Users.UserPreferences;
 import Utils.FileHelper;
-import database.DatabaseHelper;
 import java.util.ArrayList;
 
-//The class that handles Notification via SMS.
-//We are leveraging the Twilio SDK and some code has been referenced from the Twilio API Documentation.
+//This class extends and implements the abstract persistence class.
 
 public class FilePersistence extends Persistence {
 
+    //Creating an object of fileHelper to help with all the File operations.
     FileHelper fileHelper = null;
 
     //Calling the super constructor.
@@ -20,17 +19,20 @@ public class FilePersistence extends Persistence {
     }
 
     @Override
+    //Overriding the getUserPreferences since the file implementation will read from the file.
+    //The method simply forwards the task to readUserPreferences in the FileHelper class.
     public ArrayList<UserPreferences> getUserPreferences() {
         if (fileHelper.checkIfFileExistsI()) {
             return fileHelper.readUserPreferences();
         }
-        // return(fileHelper.readUserPreferences());
         else {
             return null;
         }
     }
 
     @Override
+    //Overriding the setUserPreferences since the file implementation will write to the file.
+    //The method simply forwards the task to writeUserPreferences in the FileHelper class.
     public Boolean setUserPreferences(UserPreferences userPreferences) {
         if (fileHelper.checkIfFileExistsI()) {
             return (fileHelper.writeUserPreferences(userPreferences));
@@ -40,6 +42,8 @@ public class FilePersistence extends Persistence {
 
 
     @Override
+    //Overriding the deleteUserPreferences since we will not support this operation in the file mode.
+    //The method basically prints out a message saying the operation is not supported.
     public Boolean deleteUserPreferences(Integer userId) {
         if (fileHelper.checkIfFileExistsI()) {
             System.out.println("Cannot delete data in File");

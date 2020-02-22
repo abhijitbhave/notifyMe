@@ -34,9 +34,6 @@ public class JsonFileHelper {
             userPrefProp.setProperty("userLastName", userPreferences.getUserLastName());
             userPrefProp.setProperty("userContactPreference", userPreferences.getUserContactPreference());
             userPrefProp.setProperty("userContactId", userPreferences.getUserContactId());
-            //Since date is currently an optional field ensuring that Nulls are handled.
-            userPrefProp.setProperty("userContactUntilDate",
-                (userPreferences.getUserContactUntilDate() == null) ? "NA" : userPreferences.getUserContactUntilDate().toString());
             userPrefProp.setProperty("selectedWeatherConditions", userPreferences.getSelectedWeatherConditions().toString());
             userPrefProp.store(outStream, "");
             return true;

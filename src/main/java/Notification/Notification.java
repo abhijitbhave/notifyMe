@@ -10,19 +10,11 @@ import java.util.ArrayList;
 //Definition  of the abstract class will make it easier for future implementations of new concrete classes, Eg. Slack or Whatsapp.
 public abstract class Notification<K> {
 
-    private NotificationType notificationType = null;
+
 
     public Notification(NotificationType notificationType) {
-        this.notificationType = notificationType;
-    }
 
-//    //Method to retrieve UserPreferences.
-//    private ArrayList<UserPreferences>UserPreferences getUserOptions() {
-//        FileHelper fh = new FileHelper();
-//        ArrayList<UserPreferences> userPreferences = fh.readUserPreferences();
-//        return userPreferences;
-//
-//    }
+    }
 
     //An abstract sendNotification method that will be implemented by concrete Child classes.
     public abstract String sendNotification(K notificationObject, UserPreferences userPreferences);

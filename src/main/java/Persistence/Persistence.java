@@ -4,13 +4,11 @@ import Users.UserPreferences;
 import Utils.FileHelper;
 import java.util.ArrayList;
 
-public abstract class Persistence<K> {
+//This is a new class introduced in order to be able to support multiple types of persistence layers.
+//Currently we are support database persistence OR File based persistence. The abstract class is extended and implemented by its child classes.
+public abstract class Persistence {
 
-    private PersistenceType persistenceType = null;
-
-    public Persistence(PersistenceType persistenceType) {
-        this.persistenceType = persistenceType;
-    }
+    public Persistence(PersistenceType persistenceType) {    }
 
     //Method to retrieve UserPreferences.
     private ArrayList<UserPreferences> getUserOptions() {

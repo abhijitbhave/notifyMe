@@ -1,5 +1,6 @@
 package WeatherAttributes;
 
+import Users.UserPreferences;
 import Utils.DateHelper;
 import org.json.JSONObject;
 
@@ -13,6 +14,15 @@ public class Weather<T> {
     private Temperature temperature;
     private Wind wind;
     private Snow snow;
+    private Integer zipCode;
+
+    public Integer getZipCode() {
+        return zipCode;
+    }
+
+    public void setZipCode(Integer zipCode) {
+        this.zipCode = zipCode;
+    }
 
     public Snow getSnow() {
         return snow;
@@ -71,7 +81,10 @@ public class Weather<T> {
     }
 
     public void setWeatherAttribute(T weatherAttribute) {
-        if (weatherAttribute instanceof String) {
+        if (weatherAttribute instanceof Integer) {
+            setZipCode(Integer.parseInt(weatherAttribute.toString()));
+            ;
+        } else if (weatherAttribute instanceof String) {
             setPrimaryWeather(weatherAttribute.toString());
         } else if (weatherAttribute instanceof Humidity) {
             setHumidity((Humidity) weatherAttribute);
@@ -83,39 +96,31 @@ public class Weather<T> {
             setRain((Rain) weatherAttribute);
         } else if (weatherAttribute instanceof Sun) {
             setSun((Sun) weatherAttribute);
-        }
-        else if(weatherAttribute instanceof Snow){
-            setSnow((Snow)weatherAttribute);
+        } else if (weatherAttribute instanceof Snow) {
+            setSnow((Snow) weatherAttribute);
         }
     }
 
     public String toString() {
         StringBuilder weatherString = new StringBuilder();
-        weatherString.append("\nWEATHER for "+ DateHelper.getTomorrow()+" :\nOverAll Weather: ");
+        weatherString.append("\nWEATHER at zipCode: " + zipCode + " for Date: " + DateHelper.getTomorrow() + " :\nOverAll Weather: ");
         String builder = null;
-        builder = (primaryWeather == null)?"None":primaryWeather;
+        builder = (primaryWeather == null) ? "None" : primaryWeather;
         weatherString.append(primaryWeather + "\n");
-        builder = (temperature == null)?"Temp: None\n":temperature.toString();
+        builder = (temperature == null) ? "Temp: None\n" : temperature.toString();
         weatherString.append(builder);
-        builder = (humidity == null)?"Humidity: None\n":humidity.toString();
+        builder = (humidity == null) ? "Humidity: None\n" : humidity.toString();
         weatherString.append(builder);
-        builder = (wind == null)?"Wind : None\n":wind.toString();
+        builder = (wind == null) ? "Wind : None\n" : wind.toString();
         weatherString.append(builder);
-        builder = (sun == null)?"Sun : None\n":sun.toString();
+        builder = (sun == null) ? "Sun : None\n" : sun.toString();
         weatherString.append(builder);
-        builder = (rain == null)?"\nRAIN: None\n":rain.toString();
+        builder = (rain == null) ? "\nRAIN: None\n" : rain.toString();
         weatherString.append(builder);
-        builder = (snow == null)?"\nSNOW: None":snow.toString();
+        builder = (snow == null) ? "\nSNOW: None" : snow.toString();
         weatherString.append(builder);
-        return(weatherString.toString());
+        return (weatherString.toString());
 
-
-//        return ("" + primaryWeather + temperature.toString() == null ? "NA"
-//            : temperature.toString() + wind
-//                .toString() == null ? "NA" : wind.toString() + sun.toString() == null ? "NA"
-//                : sun.toString() + humidity.toString() == null ? "NA"
-//                    : humidity.toString()
-//                        + rain.toString() == null ? "NA" : rain.toString());
     }
 
     public void getWeather() {

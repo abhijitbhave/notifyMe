@@ -1,7 +1,6 @@
 package Notification;
 
 import Users.UserPreferences;
-import Utils.DateHelper;
 import com.sun.mail.smtp.SMTPTransport;
 import java.util.Properties;
 import javax.mail.Message.RecipientType;
@@ -38,13 +37,13 @@ public class EmailNotification extends Notification {
         //Creating a transport object for type SMTP.
         //SMTPTransport transport = null;
 
-        //Runing in a try catch block to try and send an email.
+        //Running in a try catch block to try and send an email.
         try (SMTPTransport transport = (SMTPTransport) emailSession.getTransport("smtps")) {
             //Creating the various properties required for sending the email MimeMessage. Mime = Multipurpose Internet Mail Extension.
             MimeMessage emailMessage = new MimeMessage(emailSession);
             emailMessage.setFrom(new InternetAddress("abhijit.bhave@gmail.com"));
             emailMessage.addRecipient(RecipientType.TO, new InternetAddress(userPreferences.getUserContactId(), false));
-            emailMessage.setSubject("Weather for tomorrow: " + DateHelper.getTomorrow());
+            emailMessage.setSubject("Mail from NotifyMe");
             emailMessage.setText(super.messageBuilder(notificationObject, userPreferences));
             //Setting the various properties for authenticating gmail.
             transport.connect("smtp.gmail.com", "bhaveprojects", "abhijit1122");

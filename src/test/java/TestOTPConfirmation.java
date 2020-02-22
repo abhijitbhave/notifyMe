@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 // At this point since sending messages is already testing not retesting the sendOTP method as it leverages the same methods tested previously.
 //Not testing the UX pieces.
 
-public class testOTPConfirmation {
+public class TestOTPConfirmation {
 
     OTPConfirmation otpConfirmation = new OTPConfirmation();
 

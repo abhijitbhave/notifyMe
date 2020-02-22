@@ -5,7 +5,6 @@ import Persistence.*;
 import Users.UserPreferences;
 import WeatherAttributes.Weather;
 import WeatherUtils.FetchWeather;
-import database.DatabaseHelper;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -18,6 +17,9 @@ import java.util.regex.Pattern;
 
 
 //The Menu class. Could be extended in the future.
+//Changed the implementation of the Menu class significantly to use Persistence Factory as well as to deal with ArrayList of UserPreferences rather that just one Object.
+//Also introduced threads for concurrent runs of the calls for multiple users
+
 public class Menu {
 
 
@@ -30,6 +32,8 @@ public class Menu {
         try (InputStream inStream = new FileInputStream(fileName)) {
             Properties dataPersistenceProperties = new Properties();
             dataPersistenceProperties.load(inStream);
+            //Setting Persistence type based on properties in application.properties file.
+            //Currently supported types are database and files.
             String dataPersistanceFlag = dataPersistenceProperties.getProperty("dataPersistenceType");
             PersistenceType persistenceType = null;
             if (dataPersistanceFlag.toUpperCase().matches("DATABASE")) {
@@ -39,8 +43,11 @@ public class Menu {
             } else {
                 persistenceType = null;
             }
+            //Leveraging the persistence factory to create a new database/file persistence object.
             PersistenceFactory persistenceFactory = new PersistenceFactory();
-            this.persistence = persistenceFactory.buildPersistenceLayer(persistenceType);
+            if (persistenceType != null) {
+                this.persistence = persistenceFactory.buildPersistenceLayer(persistenceType);
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -58,7 +65,17 @@ public class Menu {
         System.out.println("2. Notify User");
         System.out.println("3. List Registered Users");
         System.out.println("4. Delete Registered User \n");
-        Integer choice = console.nextInt();
+        Integer choice = null;
+        try{
+            choice = console.nextInt();
+        }
+        catch(InputMismatchException e) {
+            try {
+                throw new NotifyMeException("Invalid Menu Option ");
+            } catch (NotifyMeException ex) {
+                ex.printStackTrace();
+            }
+        }
         if (choice == 1) {
             //If user selected to register User, then running that option.
             System.out.println("You have selected to Register user");
@@ -75,21 +92,38 @@ public class Menu {
             }
             //If user is registered, then will call the notification flow, to be implemented.
             System.out.println("You have selected to Notify users: ");
+            //Creating an ArrayList of thread where all runnable items will be added to the list and run at once in parallel.
+            //That means that the core functionality of the application (fetching data and notifying the user) will be run in parallel.
+            ArrayList<Thread> threadList = new ArrayList<Thread>();
             userPreferencesList.forEach(userPreferences -> {
-                System.out.println(userPreferences.getUserFirstName());
-                NotificationHelper notificationHelper = new NotificationHelper();
-                FetchWeather fetchWeather = new FetchWeather();
-                Weather weather = fetchWeather.setWeatherAttributes();
-                notificationHelper.complieNotification(weather, userPreferences);
+                Thread thread = new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                            System.out.println(userPreferences.getUserFirstName());
+                            NotificationHelper notificationHelper = new NotificationHelper();
+                            FetchWeather fetchWeather = new FetchWeather();
+                            Weather weather = fetchWeather.setWeatherAttributes(userPreferences.getZipCode());
+                            notificationHelper.complieNotification(weather, userPreferences);
+                    }
+
+                });
+                //Adding all threads into the list one by one.
+                threadList.add(thread);
+
             });
+            //Using Lambdas to run/start all threads, there by running the calls for multiple users in parallel. This will help when the application scales.
+            threadList.forEach(threads -> threads.start());
         }
-        else if (choice == 3){
+        //Adding in a new menu choice to list all users. Given that the database version of the application will now support multiple users there may be a need for the
+        // administrator to list all registered users.
+        else if (choice == 3) {
             System.out.println("You have selected to List all Registered Users");
             ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
             userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
             mainMenu();
         }
-        else if (choice == 4){
+        //Adding a new menu option to delete existing users. This option will work only for database based featureFlag.
+        else if (choice == 4) {
             System.out.println("You have selected to Delete a Registered Users");
             ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
             userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
@@ -97,8 +131,7 @@ public class Menu {
             Integer userId = console.nextInt();
             persistence.deleteUserPreferences(userId);
             mainMenu();
-        }
-        else {
+        } else {
             System.out.println("Invalid choice.");
             mainMenu();
         }
@@ -174,21 +207,18 @@ public class Menu {
         OTPConfirmation otpConfirmation = new OTPConfirmation();
         otpConfirmation.sendOtp(up);
         //Once OTP is sent to device, launching the JavaFx UI to allow user to validate the information.
-        javafx.application.Application.launch(OTPConfirmation.class);
+        try{
 
-        //Code for future assignment.calling out the application using threads.
-        //        Runnable otpTask = () -> {
-//            javafx.application.Application.launch(OTPConfirmation.class);
-//        };
-//        try {
-//            new Thread(otpTask).start();
-//            new Thread(otpTask).join();
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+            javafx.application.Application.launch(OTPConfirmation.class);
+        }
+        catch(IllegalStateException e) {
+            try {
+                throw new NotifyMeException("Currently the application supports only one run per session. Please restart the app and Register 2nd user. \n"+e.getMessage());
+            } catch (NotifyMeException ex) {
+                ex.printStackTrace();
+            }
+        }
 
-        //System.out.println("Enter contact till date");
-        //up.setUserContactUntilDate(console.next());
 
         System.out.println("\n Please select which weather conditions you would like to be notified for: (Select all that apply)");
         System.out.println("\t 1. Rain.");
@@ -218,6 +248,19 @@ public class Menu {
         //Once the user has selected the required options, persisting the data to the properties file using the FileHelper class and
         //returninng to main menu
         up.setSelectedWeatherConditions(weatherConditions);
+
+        //A new menu  option for the user to select a zipCode of interest. With the database based implementation of the application we may now have multiple
+        // Users and each one may be interested in a different or multiple cities. In order to enable that we are asking the zipCode of interest from the user.
+        System.out.println("\n Please provide the zipCode for which the weather forcast needs to be fetched");
+        try {
+            up.setZipCode(console.nextInt());
+        } catch (InputMismatchException e) {
+            try {
+                throw new NotifyMeException("Invalid Choice. Please provide a numeric choice. " + e.getMessage());
+            } catch (NotifyMeException ex) {
+                ex.printStackTrace();
+            }
+        }
 
         System.out.println(
             "You have selected to be notified by: " + up.getUserContactPreference() + "\n");

@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 
-public class testUserPreferences {
+public class TestUserPreferences {
 
     UserPreferences up = new UserPreferences();
     ArrayList<String> weather = new ArrayList<String>();
@@ -40,7 +40,7 @@ public class testUserPreferences {
         assertTrue(up.getSelectedWeatherConditions().containsAll(weather));
     }
 
-    //Tesitng the too String functionality of the UserPreference object.
+    //Testing the too String functionality of the UserPreference object.
     @Test
     public void testUserPreferencesToString(){
         assertTrue(up.toString()instanceof String);

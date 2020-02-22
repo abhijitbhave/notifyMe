@@ -1,6 +1,5 @@
 import Users.UserPreferences;
 import Utils.FileHelper;
-import Utils.NotifyMeException;
 import java.io.File;
 import java.util.ArrayList;
 import org.junit.Test;
@@ -26,6 +25,7 @@ public class TestFileHelper {
         weather.add("Cold");
         weather.add("Heat");
         up.setSelectedWeatherConditions(weather);
+        up.setZipCode(94568);
         up.setUserContactId("1234567890");
         fh.writeUserPreferences(up);
         File file = new File("userPreferences.properties");

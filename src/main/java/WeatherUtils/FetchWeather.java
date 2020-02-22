@@ -1,6 +1,7 @@
 package WeatherUtils;
 
 
+import Utils.DateHelper;
 import Utils.NotifyMeException;
 import WeatherAttributes.Humidity;
 import WeatherAttributes.Rain;
@@ -23,26 +24,32 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-//The weather class that will be lveraged to fetch weather details from the third party openWeahter api.
+//The weather class that will be leveraged to fetch weather details from the third party openWeahter api.
 
 public class FetchWeather {
 
     //The fetch weather method that connects to the OpenWeather API and downloads the required weather forecast information as a JSON file.
     //This JSON file will be passed onwards for further processing.
 
-    private JSONObject fetchWeather() {
+    //Changing the implementation of fetchWeather from a specific City to bring back data based on ZipCodes in USA.
+    //Given that we now support multiple users, we need to be able to fetch the forecast for multiple Cities. In order to facilitiate that I am using zipCodes.
+    private JSONObject fetchWeather(Integer zipCode) {
 
-        //Setting the Units to Imperial since thats the system used in USA.
+        //Setting the Units to Imperial since that's the system used in USA.
 
         String units = "Imperial";
         //Setting a API Key. Can be acquired free by registering at OpenWeather.
         String openWeatherAPIKey = "4deb275bbcfca2aca4d60da22b9863f5";
+        System.out.println("Fetching the weather forecast for zipCode: "+zipCode);
         //A City ID is used in the API. Default set to SF, however used Munich to test other weather confitions.
-        //Integer cityId = 2867714; //City of Munich, De
-        Integer cityId = 5391997; //City ID for San Francisco
+       // Integer cityId = 5391997; //City ID for San Francisco
         //Creating a base URL to call the API and retrieve information.
+
+        //Changing the base URL to use ZipCodes instead of CityId. Leaving the original one here as commented if needed in the future.
         String baseURL =
-            "http://api.openweathermap.org/data/2.5/forecast/?id=" + cityId + "&appid=" + openWeatherAPIKey + "&units=" + units;
+        //    "http://api.openweathermap.org/data/2.5/forecast/?id=" + cityId + "&appid=" + openWeatherAPIKey + "&units=" + units;
+            "http://api.openweathermap.org/data/2.5/forecast/?zip=" + zipCode + "&appid=" + openWeatherAPIKey + "&units=" + units;
+
 
         //S string builder Object to build the response recived from the API.
         StringBuilder resultString = new StringBuilder();
@@ -67,7 +74,7 @@ public class FetchWeather {
                 } catch (UnknownHostException e) {
                     try {
                         throw new NotifyMeException(
-                            "\n***** Destination host not reachable. Probablly no internet connection. Please try again later with a stable internet connection. *****\n");
+                            "\n***** Destination host not reachable. Probably no internet connection. Please try again later with a stable internet connection. *****\n");
                     } catch (NotifyMeException ex) {
                         ex.printStackTrace();
                     }
@@ -82,14 +89,14 @@ public class FetchWeather {
         return null;
     }
 
-    //A method to retrive data from the JSON object created by fetching the response and setting various attributes in the Weather object.
-    public Weather setWeatherAttributes() {
+    //A method to retrieve data from the JSON object created by fetching the response and setting various attributes in the Weather object.
+    public Weather setWeatherAttributes(Integer zipCode) {
 
         //Creating an Object of type weather
         Weather weather = new Weather();
 
         //Getting the JSON Object leveraging the fetchWeather method.
-        JSONObject weatherDump = fetchWeather();
+        JSONObject weatherDump = fetchWeather(zipCode);
         //Retriving the City block from the JSON to get the sunrise and sunset times.
         JSONObject city = (JSONObject) weatherDump.get("city");
         Date sunrise = new Date((Integer) (city.get("sunrise")) * 1000L);
@@ -100,10 +107,10 @@ public class FetchWeather {
         //Calling on the generic weather.setAttribute method to set weather's Sun attribute.
         weather.setWeatherAttribute(sun);
 
-        //Retiving the List array block from the JSON to process and retieve other attributes.
+        //Retrieving the List array block from the JSON to process and retrieve other attributes.
         JSONArray weatherForecasts = weatherDump.getJSONArray("list");
-        //However off the list of all the forecasts, the one that important is the one for tomororw at 9:00 AM
-        // since thats the time we reach office. Hence calculating the date for tomorrow.
+        //However off the list of all the forecasts, the one that important is the one for tomorrow at 9:00 AM
+        // since that's the time we reach office. Hence calculating the date for tomorrow.
         Integer arrayIndex = null;
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Calendar cal = Calendar.getInstance();
@@ -127,7 +134,8 @@ public class FetchWeather {
             }
         }
 
-        JSONArray weatherArray = weatherForecastForNineAm.getJSONArray("weather");
+        JSONArray weatherArray;
+        weatherArray = weatherForecastForNineAm.getJSONArray("weather");
 
         //Now retriving the various weather attributes from the 9 AM Tomorrow Array and using weather's generic set method to enrich the object.
         weather.setWeatherAttribute(weatherArray.getJSONObject(0).getString("description"));
@@ -173,6 +181,7 @@ public class FetchWeather {
             Rain rain = null;
             weather.setWeatherAttribute(rain);
         }
+            weather.setWeatherAttribute(zipCode);
         return (weather);
 
     }

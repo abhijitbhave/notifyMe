@@ -34,9 +34,7 @@ public class FileHelper {
             userPrefProp.setProperty("userLastName", userPreferences.getUserLastName());
             userPrefProp.setProperty("userContactPreference", userPreferences.getUserContactPreference());
             userPrefProp.setProperty("userContactId", userPreferences.getUserContactId());
-            //Since date is currently an optional field ensuring that Nulls are handled.
-            userPrefProp.setProperty("userContactUntilDate",
-                (userPreferences.getUserContactUntilDate() == null) ? "NA" : userPreferences.getUserContactUntilDate().toString());
+            userPrefProp.setProperty("zipCode", userPreferences.getZipCode().toString());
             userPrefProp.setProperty("selectedWeatherConditions", userPreferences.getSelectedWeatherConditions().toString());
             userPrefProp.store(outStream, "");
             return true;
@@ -75,6 +73,7 @@ public class FileHelper {
             userPreferences.setUserContactPreference(userPrefProps.getProperty("userContactPreference"));
             userPreferences.setUserContactId(userPrefProps.getProperty("userContactId"));
             userPreferences.setSelectedWeatherConditions(userPrefProps.getProperty("selectedWeatherConditions"));
+            userPreferences.setZipCode(Integer.parseInt(userPrefProps.getProperty("zipCode")));
             userList.add(userPreferences);
             return userList;
         }

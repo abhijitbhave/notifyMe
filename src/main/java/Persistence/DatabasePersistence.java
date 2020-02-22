@@ -1,18 +1,14 @@
 package Persistence;
 
-import Notification.Notification;
 import Users.UserPreferences;
-import com.twilio.Twilio;
-import com.twilio.rest.api.v2010.account.Message;
-import com.twilio.type.PhoneNumber;
 import database.DatabaseHelper;
 import java.util.ArrayList;
 
-//The class that handles Notification via SMS.
-//We are leveraging the Twilio SDK and some code has been referenced from the Twilio API Documentation.
+//The class extended the Persistence class and is the concrete implementation of a database persistence path.
 
 public class DatabasePersistence extends Persistence {
 
+    //Creating an object for databaseHelper which will actually perform all the database operations.
     DatabaseHelper databaseHelper = null;
 
     //Calling the super constructor.
@@ -24,6 +20,8 @@ public class DatabasePersistence extends Persistence {
     }
 
     @Override
+    //Overriding the getUserPreferences since the database implementation will read from the database.
+    //The method simply forwards the task to readDataFromDatabase as long as the table exists in the DatabaseHelper class.
     public ArrayList<UserPreferences> getUserPreferences() {
         if(databaseHelper.weatherTableExists())
             return(databaseHelper.readDataFromDatabase());
@@ -32,6 +30,8 @@ public class DatabasePersistence extends Persistence {
     }
 
     @Override
+    //Overriding the setUserPreferences since the database implementation will write to the database.
+    //The method simply forwards the task to insertIntoDatabase as long as the table exists in the DatabaseHelper class.
     public Boolean setUserPreferences(UserPreferences userPreferences) {
         if(databaseHelper.weatherTableExists())
             return(databaseHelper.insertIntoDatabase(userPreferences));
@@ -39,6 +39,9 @@ public class DatabasePersistence extends Persistence {
     }
 
     @Override
+    //Overriding the deleteUserPreferences since the database implementation will delete from the database.
+    //The method simply forwards the task to deleteDataFromDatabase as long as the table exists in the DatabaseHelper class.
+
     public Boolean deleteUserPreferences(Integer userId) {
         if(databaseHelper.weatherTableExists())
             return(databaseHelper.deleteDataFromDatabase(userId));
