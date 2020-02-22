@@ -23,7 +23,7 @@ public class DatabasePersistence extends Persistence {
     //Overriding the getUserPreferences since the database implementation will read from the database.
     //The method simply forwards the task to readDataFromDatabase as long as the table exists in the DatabaseHelper class.
     public ArrayList<UserPreferences> getUserPreferences() {
-        if(databaseHelper.weatherTableExists())
+        if(databaseHelper.weatherTableExists("UserDetails"))
             return(databaseHelper.readDataFromDatabase());
         else
             return null;
@@ -33,7 +33,7 @@ public class DatabasePersistence extends Persistence {
     //Overriding the setUserPreferences since the database implementation will write to the database.
     //The method simply forwards the task to insertIntoDatabase as long as the table exists in the DatabaseHelper class.
     public Boolean setUserPreferences(UserPreferences userPreferences) {
-        if(databaseHelper.weatherTableExists())
+        if(databaseHelper.weatherTableExists("UserDetails"))
             return(databaseHelper.insertIntoDatabase(userPreferences));
         return false;
     }
@@ -42,8 +42,8 @@ public class DatabasePersistence extends Persistence {
     //Overriding the deleteUserPreferences since the database implementation will delete from the database.
     //The method simply forwards the task to deleteDataFromDatabase as long as the table exists in the DatabaseHelper class.
 
-    public Boolean deleteUserPreferences(Integer userId) {
-        if(databaseHelper.weatherTableExists())
+    public Boolean deleteUserPreferences(String userId) {
+        if(databaseHelper.weatherTableExists("UserDetails"))
             return(databaseHelper.deleteDataFromDatabase(userId));
         return false;
     }

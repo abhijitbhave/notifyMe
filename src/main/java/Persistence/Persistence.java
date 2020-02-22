@@ -25,7 +25,7 @@ public abstract class Persistence {
     public abstract Boolean setUserPreferences(UserPreferences userPreferences);
 
     //An abstract setUserPreferences method that will be implemented by concrete Child classes.
-    public abstract Boolean deleteUserPreferences(Integer userId);
+    public abstract Boolean deleteUserPreferences(String userId);
 
 
 }

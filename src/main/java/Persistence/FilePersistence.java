@@ -44,7 +44,7 @@ public class FilePersistence extends Persistence {
     @Override
     //Overriding the deleteUserPreferences since we will not support this operation in the file mode.
     //The method basically prints out a message saying the operation is not supported.
-    public Boolean deleteUserPreferences(Integer userId) {
+    public Boolean deleteUserPreferences(String userId) {
         if (fileHelper.checkIfFileExistsI()) {
             System.out.println("Cannot delete data in File");
             return false;

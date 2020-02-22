@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Properties;
 import java.util.Scanner;
+import java.util.UUID;
 import java.util.regex.Pattern;
 
 
@@ -119,16 +120,22 @@ public class Menu {
         else if (choice == 3) {
             System.out.println("You have selected to List all Registered Users");
             ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
-            userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
+            if(userPreferenceList.size() > 0) {
+                userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
+            }
+            else{
+                System.out.println("No registered Users found. Please register a User.\n");
+                registerUser();
+            }
             mainMenu();
         }
         //Adding a new menu option to delete existing users. This option will work only for database based featureFlag.
         else if (choice == 4) {
-            System.out.println("You have selected to Delete a Registered Users");
+            System.out.println("You have selected to Delete a Registered Users.");
             ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
             userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
             System.out.println("Please enter the UserID you wish to delete");
-            Integer userId = console.nextInt();
+            String userId = console.next();
             persistence.deleteUserPreferences(userId);
             mainMenu();
         } else {
@@ -261,6 +268,7 @@ public class Menu {
                 ex.printStackTrace();
             }
         }
+        up.setUserId(UUID.randomUUID().toString());
 
         System.out.println(
             "You have selected to be notified by: " + up.getUserContactPreference() + "\n");
