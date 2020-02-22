@@ -1,69 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Class_Diagram_Assigment5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sequence_Diagram_Assignment5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestDatabaseHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestGenericPersistence.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weatherDB/log/log5.dat" afterDir="false" />
+    <list default="true" id="272462fc-80f9-4c8c-b379-7fb8c11545ef" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/Basic Sequence Diagram.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ClassDiagram_NotifyMe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserPreferences.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/objectReadWrite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/EmailNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/Notification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Notification/NotificationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NotifyMe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NotifyMe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/DatabasePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/DatabasePersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/FilePersistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/FilePersistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/Persistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/Persistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/PersistenceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/PersistenceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Persistence/PersistenceType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Persistence/PersistenceType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Users/UserPreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/FileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/JsonFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/JsonFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utils/OTPConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/OTPConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Sun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherAttributes/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeatherUtils/FetchWeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestFileHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testGenericNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestGenericNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testNotification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNotification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestOTPConfirmation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testPersistence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testUserPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUserPreferences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/log/log3.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c10.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c10.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c241.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c241.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c251.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c251.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c470.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c470.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weatherDB/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/cb1.dat" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" afterDir="false" />
->>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,76 +12,25 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1WsehvPkLJmNWZv8zRBTcT14hX7" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1YB8aQdwYwMxbJ8BZvyfy1pB8UW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-      <recent name="Utils" />
-      <recent name="Persistence" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/resources" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.All in notifyMe">
+  <component name="RunManager">
     <configuration name="NotifyMe" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="NotifyMe" />
       <module name="notifyMe" />
@@ -150,49 +38,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in notifyMe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDatabaseHelper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestDatabaseHelper" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestDatabaseHelper.testWriteUserPreferences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestDatabaseHelper" />
-      <option name="METHOD_NAME" value="testWriteUserPreferences" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="notifyMe" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNotification" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in notifyMe" />
         <item itemvalue="Application.NotifyMe" />
-        <item itemvalue="JUnit.TestNotification" />
-        <item itemvalue="JUnit.TestDatabaseHelper" />
-        <item itemvalue="JUnit.TestDatabaseHelper.testWriteUserPreferences" />
       </list>
     </recent_temporary>
   </component>
@@ -213,227 +61,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="518641be-75ab-4477-8184-e0ff3e422472" name="Default Changelist" comment="" />
-      <created>1579942851772</created>
+      <changelist id="272462fc-80f9-4c8c-b379-7fb8c11545ef" name="Default Changelist" comment="" />
+      <created>1582404305239</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579942851772</updated>
-      <workItem from="1579942853840" duration="15502000" />
-      <workItem from="1580098799373" duration="56752000" />
-      <workItem from="1580787109472" duration="14509000" />
-      <workItem from="1581106648460" duration="21000" />
-      <workItem from="1581183350145" duration="1640000" />
-      <workItem from="1581185987713" duration="10501000" />
-      <workItem from="1581209098264" duration="22640000" />
-      <workItem from="1581723788603" duration="4319000" />
-<<<<<<< HEAD
-      <workItem from="1582152604198" duration="13669000" />
-      <workItem from="1582327840419" duration="2782000" />
-      <workItem from="1582398631653" duration="3463000" />
-=======
-      <workItem from="1581986650390" duration="171000" />
->>>>>>> master
+      <updated>1582404305239</updated>
+      <workItem from="1582404307489" duration="317000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1582260342401">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="100" y="100" width="1480" height="850" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1582260342401" />
-    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser" timestamp="1582211754730">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="653" y="220" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1582211754730" />
-    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.973@0.23.1680.973" timestamp="1580968943902" />
-    <state x="653" y="227" key="#com.intellij.ide.util.MemberChooser/0.23.1680.976@0.23.1680.976" timestamp="1580751459958" />
-    <state x="371" y="124" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581781267732">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="371" y="124" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581781267732" />
-    <state x="458" y="188" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1680.974@0.23.1680.974" timestamp="1580067892514" />
-    <state x="612" y="390" width="455" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1580587397162">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="612" y="390" width="455" height="273" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1680.1050@0.0.1680.1050" timestamp="1580587397162" />
-    <state x="578" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580711227342">
-      <screen x="0" y="23" width="1680" height="976" />
-    </state>
-    <state x="578" y="280" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1580587717349" />
-    <state x="578" y="283" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.976@0.23.1680.976" timestamp="1580711227342" />
-    <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1580002341480">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="587" y="269" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1580002341480" />
-    <state x="576" y="117" key="Diagram.Print.Preview.Dialog" timestamp="1581207711006">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="576" y="117" key="Diagram.Print.Preview.Dialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581207711006" />
-    <state width="1318" height="128" key="GridCell.Tab.0.bottom" timestamp="1582402299637">
-      <screen x="2177" y="-1440" width="1360" height="768" />
-    </state>
-    <state width="1318" height="301" key="GridCell.Tab.0.bottom/-1360.0.1360.768/-3920.23.2560.1417/0.23.1680.978@-1360.0.1360.768" timestamp="1581744906923" />
-    <state width="2518" height="341" key="GridCell.Tab.0.bottom/-2560.-60.2560.1440/0.0.1360.768@-2560.-60.2560.1440" timestamp="1582399607719" />
-    <state width="1318" height="341" key="GridCell.Tab.0.bottom/-2560.-60.2560.1440/0.0.1360.768@0.0.1360.768" timestamp="1582400294931" />
-    <state width="2518" height="36" key="GridCell.Tab.0.bottom/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@-383.-1440.2560.1440" timestamp="1582396454350" />
-    <state width="1318" height="128" key="GridCell.Tab.0.bottom/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@2177.-1440.1360.768" timestamp="1582402299637" />
-    <state width="1318" height="249" key="GridCell.Tab.0.bottom/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394566932" />
-    <state width="1638" height="185" key="GridCell.Tab.0.bottom/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434335" />
-    <state width="3398" height="381" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208077" />
-    <state width="1638" height="342" key="GridCell.Tab.0.bottom/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1582216246793" />
-    <state width="1318" height="301" key="GridCell.Tab.0.bottom/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581780113837" />
-    <state width="1638" height="279" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282364" />
-    <state width="1638" height="393" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1582149861531" />
-    <state width="1638" height="249" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581963265809" />
-    <state width="1638" height="248" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
-    <state width="1638" height="263" key="GridCell.Tab.0.bottom/0.23.1680.974@0.23.1680.974" timestamp="1581305088481" />
-    <state width="1638" height="483" key="GridCell.Tab.0.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581614058838" />
-    <state width="1638" height="177" key="GridCell.Tab.0.bottom/0.23.1680.977@0.23.1680.977" timestamp="1580629339827" />
-    <state width="1638" height="346" key="GridCell.Tab.0.bottom/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804869" />
-    <state width="1318" height="128" key="GridCell.Tab.0.center" timestamp="1582402299632">
-      <screen x="2177" y="-1440" width="1360" height="768" />
-    </state>
-    <state width="1318" height="301" key="GridCell.Tab.0.center/-1360.0.1360.768/-3920.23.2560.1417/0.23.1680.978@-1360.0.1360.768" timestamp="1581744906920" />
-    <state width="2518" height="341" key="GridCell.Tab.0.center/-2560.-60.2560.1440/0.0.1360.768@-2560.-60.2560.1440" timestamp="1582399607714" />
-    <state width="1318" height="341" key="GridCell.Tab.0.center/-2560.-60.2560.1440/0.0.1360.768@0.0.1360.768" timestamp="1582400294926" />
-    <state width="2518" height="36" key="GridCell.Tab.0.center/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@-383.-1440.2560.1440" timestamp="1582396454347" />
-    <state width="1318" height="128" key="GridCell.Tab.0.center/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@2177.-1440.1360.768" timestamp="1582402299632" />
-    <state width="1318" height="249" key="GridCell.Tab.0.center/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394566927" />
-    <state width="1638" height="185" key="GridCell.Tab.0.center/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434332" />
-    <state width="3398" height="381" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208075" />
-    <state width="1638" height="342" key="GridCell.Tab.0.center/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1582216246791" />
-    <state width="1318" height="301" key="GridCell.Tab.0.center/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581780113833" />
-    <state width="1638" height="279" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282363" />
-    <state width="1638" height="393" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1582149861529" />
-    <state width="1638" height="249" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581963265806" />
-    <state width="1638" height="248" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
-    <state width="1638" height="263" key="GridCell.Tab.0.center/0.23.1680.974@0.23.1680.974" timestamp="1581305088480" />
-    <state width="1638" height="483" key="GridCell.Tab.0.center/0.23.1680.976@0.23.1680.976" timestamp="1581614058836" />
-    <state width="1638" height="177" key="GridCell.Tab.0.center/0.23.1680.977@0.23.1680.977" timestamp="1580629339824" />
-    <state width="1638" height="346" key="GridCell.Tab.0.center/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804866" />
-    <state width="1318" height="128" key="GridCell.Tab.0.left" timestamp="1582402299629">
-      <screen x="2177" y="-1440" width="1360" height="768" />
-    </state>
-    <state width="1318" height="301" key="GridCell.Tab.0.left/-1360.0.1360.768/-3920.23.2560.1417/0.23.1680.978@-1360.0.1360.768" timestamp="1581744906918" />
-    <state width="2518" height="341" key="GridCell.Tab.0.left/-2560.-60.2560.1440/0.0.1360.768@-2560.-60.2560.1440" timestamp="1582399607711" />
-    <state width="1318" height="341" key="GridCell.Tab.0.left/-2560.-60.2560.1440/0.0.1360.768@0.0.1360.768" timestamp="1582400294923" />
-    <state width="2518" height="36" key="GridCell.Tab.0.left/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@-383.-1440.2560.1440" timestamp="1582396454345" />
-    <state width="1318" height="128" key="GridCell.Tab.0.left/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@2177.-1440.1360.768" timestamp="1582402299629" />
-    <state width="1318" height="249" key="GridCell.Tab.0.left/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394566924" />
-    <state width="1638" height="185" key="GridCell.Tab.0.left/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434330" />
-    <state width="3398" height="381" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208073" />
-    <state width="1638" height="342" key="GridCell.Tab.0.left/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1582216246790" />
-    <state width="1318" height="301" key="GridCell.Tab.0.left/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581780113832" />
-    <state width="1638" height="279" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282361" />
-    <state width="1638" height="393" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1582149861527" />
-    <state width="1638" height="249" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581963265805" />
-    <state width="1638" height="248" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035723" />
-    <state width="1638" height="263" key="GridCell.Tab.0.left/0.23.1680.974@0.23.1680.974" timestamp="1581305088479" />
-    <state width="1638" height="483" key="GridCell.Tab.0.left/0.23.1680.976@0.23.1680.976" timestamp="1581614058833" />
-    <state width="1638" height="177" key="GridCell.Tab.0.left/0.23.1680.977@0.23.1680.977" timestamp="1580629339823" />
-    <state width="1638" height="346" key="GridCell.Tab.0.left/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804864" />
-    <state width="1318" height="128" key="GridCell.Tab.0.right" timestamp="1582402299635">
-      <screen x="2177" y="-1440" width="1360" height="768" />
-    </state>
-    <state width="1318" height="301" key="GridCell.Tab.0.right/-1360.0.1360.768/-3920.23.2560.1417/0.23.1680.978@-1360.0.1360.768" timestamp="1581744906921" />
-    <state width="2518" height="341" key="GridCell.Tab.0.right/-2560.-60.2560.1440/0.0.1360.768@-2560.-60.2560.1440" timestamp="1582399607716" />
-    <state width="1318" height="341" key="GridCell.Tab.0.right/-2560.-60.2560.1440/0.0.1360.768@0.0.1360.768" timestamp="1582400294929" />
-    <state width="2518" height="36" key="GridCell.Tab.0.right/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@-383.-1440.2560.1440" timestamp="1582396454348" />
-    <state width="1318" height="128" key="GridCell.Tab.0.right/-383.-1440.2560.1440/0.0.1680.1050/2177.-1440.1360.768@2177.-1440.1360.768" timestamp="1582402299635" />
-    <state width="1318" height="249" key="GridCell.Tab.0.right/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394566930" />
-    <state width="1638" height="185" key="GridCell.Tab.0.right/-872.-1417.3440.1417/0.23.1680.974@0.23.1680.974" timestamp="1580246434333" />
-    <state width="3398" height="381" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580247208076" />
-    <state width="1638" height="342" key="GridCell.Tab.0.right/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1582216246792" />
-    <state width="1318" height="301" key="GridCell.Tab.0.right/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581780113835" />
-    <state width="1638" height="279" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282364" />
-    <state width="1638" height="393" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1582149861530" />
-    <state width="1638" height="249" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581963265808" />
-    <state width="1638" height="248" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035724" />
-    <state width="1638" height="263" key="GridCell.Tab.0.right/0.23.1680.974@0.23.1680.974" timestamp="1581305088480" />
-    <state width="1638" height="483" key="GridCell.Tab.0.right/0.23.1680.976@0.23.1680.976" timestamp="1581614058837" />
-    <state width="1638" height="177" key="GridCell.Tab.0.right/0.23.1680.977@0.23.1680.977" timestamp="1580629339826" />
-    <state width="1638" height="346" key="GridCell.Tab.0.right/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581737804867" />
-    <state width="1318" height="188" key="GridCell.Tab.1.bottom" timestamp="1582394552036">
-      <screen x="-1360" y="0" width="1360" height="768" />
-    </state>
-    <state width="1318" height="188" key="GridCell.Tab.1.bottom/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394552036" />
-    <state width="1638" height="279" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282369" />
-    <state width="1638" height="279" key="GridCell.Tab.1.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581963265753" />
-    <state width="1638" height="248" key="GridCell.Tab.1.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581189035727" />
-    <state width="1638" height="279" key="GridCell.Tab.1.bottom/0.23.1680.976@0.23.1680.976" timestamp="1581658343795" />
-    <state width="1318" height="188" key="GridCell.Tab.1.center" timestamp="1582394552032">
-      <screen x="-1360" y="0" width="1360" height="768" />
-    </state>
-    <state width="1318" height="188" key="GridCell.Tab.1.center/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394552032" />
-    <state width="1638" height="279" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282366" />
-    <state width="1638" height="279" key="GridCell.Tab.1.center/0.23.1680.967@0.23.1680.967" timestamp="1581963265752" />
-    <state width="1638" height="248" key="GridCell.Tab.1.center/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
-    <state width="1638" height="279" key="GridCell.Tab.1.center/0.23.1680.976@0.23.1680.976" timestamp="1581658343793" />
-    <state width="1318" height="188" key="GridCell.Tab.1.left" timestamp="1582394552029">
-      <screen x="-1360" y="0" width="1360" height="768" />
-    </state>
-    <state width="1318" height="188" key="GridCell.Tab.1.left/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394552029" />
-    <state width="1638" height="279" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282365" />
-    <state width="1638" height="279" key="GridCell.Tab.1.left/0.23.1680.967@0.23.1680.967" timestamp="1581963265750" />
-    <state width="1638" height="248" key="GridCell.Tab.1.left/0.23.1680.973@0.23.1680.973" timestamp="1581189035725" />
-    <state width="1638" height="279" key="GridCell.Tab.1.left/0.23.1680.976@0.23.1680.976" timestamp="1581658343792" />
-    <state width="1318" height="188" key="GridCell.Tab.1.right" timestamp="1582394552034">
-      <screen x="-1360" y="0" width="1360" height="768" />
-    </state>
-    <state width="1318" height="188" key="GridCell.Tab.1.right/-3920.0.2560.1440/0.0.1680.1050/-1360.0.1360.768@-1360.0.1360.768" timestamp="1582394552034" />
-    <state width="1638" height="279" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1582327282368" />
-    <state width="1638" height="279" key="GridCell.Tab.1.right/0.23.1680.967@0.23.1680.967" timestamp="1581963265752" />
-    <state width="1638" height="248" key="GridCell.Tab.1.right/0.23.1680.973@0.23.1680.973" timestamp="1581189035726" />
-    <state width="1638" height="279" key="GridCell.Tab.1.right/0.23.1680.976@0.23.1680.976" timestamp="1581658343794" />
-    <state x="342" y="95" key="Maven.ArtifactSearchDialog" timestamp="1581779591325">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="-924" y="95" key="Maven.ArtifactSearchDialog/-1360.0.1360.768/-3920.23.2560.1417/0.23.1680.978@-1360.0.1360.768" timestamp="1581745503041" />
-    <state x="386" y="-1057" key="Maven.ArtifactSearchDialog/-872.-1440.3440.1440/0.0.1680.1050@-872.-1440.3440.1440" timestamp="1580246832231" />
-    <state x="342" y="95" key="Maven.ArtifactSearchDialog/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581779591325" />
-    <state x="614" y="279" key="Maven.ArtifactSearchDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581191024651" />
-    <state x="283" y="46" key="SettingsEditor" timestamp="1581779747979">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="283" y="46" key="SettingsEditor/0.0.1360.768/-2560.0.2560.1440@0.0.1360.768" timestamp="1581779747979" />
-    <state x="349" y="149" key="SettingsEditor/0.23.1680.974@0.23.1680.974" timestamp="1580067882136" />
-    <state x="496" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1581209099319">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="496" y="343" key="com.intellij.ide.util.TipDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1581209099319" />
-    <state x="496" y="337" key="com.intellij.ide.util.TipDialog/0.23.1680.960@0.23.1680.960" timestamp="1580098799307" />
-    <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1580000250824">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="552" y="428" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1680.1050@0.0.1680.1050" timestamp="1580000250824" />
-    <state x="407" y="75" width="673" height="693" key="find.popup" timestamp="1582400510045">
-      <screen x="0" y="0" width="1360" height="768" />
-    </state>
-    <state x="407" y="75" width="673" height="693" key="find.popup/-2560.-60.2560.1440/0.0.1360.768@0.0.1360.768" timestamp="1582400510045" />
-    <state x="503" y="294" width="673" height="462" key="find.popup/-872.-1440.3440.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1580842227173" />
-    <state x="503" y="294" width="673" height="462" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1581840693120" />
-    <state x="503" y="294" width="673" height="462" key="find.popup/1680.0.2560.1440/0.0.1680.1050@0.0.1680.1050" timestamp="1581738286223" />
-    <state x="554" y="323" width="670" height="728" key="search.everywhere.popup" timestamp="1582166659227">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="554" y="323" width="670" height="728" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1582166659227" />
-    <state x="554" y="323" width="670" height="676" key="search.everywhere.popup/0.23.1680.976@0.23.1680.976" timestamp="1580755048287" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Utils/Menu.java</url>
-          <line>85</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
