@@ -8,6 +8,7 @@
       <change afterPath="$PROJECT_DIR$/src/test/java/TestGenericPersistence.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/weatherDB/log/log5.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Basic Sequence Diagram.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ClassDiagram_NotifyMe.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/UserPreferences.properties" beforeDir="false" afterPath="$PROJECT_DIR$/UserPreferences.properties" afterDir="false" />
@@ -60,6 +61,9 @@
       <change beforePath="$PROJECT_DIR$/weatherDB/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/c90.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherDB/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/ca1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weatherDB/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/weatherDB/seg0/cb1.dat" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testOTPConfirmation.java" afterDir="false" />
+>>>>>>> master
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,9 +226,13 @@
       <workItem from="1581185987713" duration="10501000" />
       <workItem from="1581209098264" duration="22640000" />
       <workItem from="1581723788603" duration="4319000" />
+<<<<<<< HEAD
       <workItem from="1582152604198" duration="13669000" />
       <workItem from="1582327840419" duration="2782000" />
       <workItem from="1582398631653" duration="3463000" />
+=======
+      <workItem from="1581986650390" duration="171000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
