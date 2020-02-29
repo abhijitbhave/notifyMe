@@ -16,7 +16,6 @@ import java.util.Scanner;
 import java.util.UUID;
 import java.util.regex.Pattern;
 
-
 //The Menu class. Could be extended in the future.
 //Changed the implementation of the Menu class significantly to use Persistence Factory as well as to deal with ArrayList of UserPreferences rather that just one Object.
 //Also introduced threads for concurrent runs of the calls for multiple users
@@ -65,12 +64,12 @@ public class Menu {
         System.out.println("1. Register User.");
         System.out.println("2. Notify User");
         System.out.println("3. List Registered Users");
-        System.out.println("4. Delete Registered User \n");
+        System.out.println("4. Delete Registered User");
+        System.out.println("5. Exit \n");
         Integer choice = null;
-        try{
+        try {
             choice = console.nextInt();
-        }
-        catch(InputMismatchException e) {
+        } catch (InputMismatchException e) {
             try {
                 throw new NotifyMeException("Invalid Menu Option ");
             } catch (NotifyMeException ex) {
@@ -100,11 +99,11 @@ public class Menu {
                 Thread thread = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                            System.out.println(userPreferences.getUserFirstName());
-                            NotificationHelper notificationHelper = new NotificationHelper();
-                            FetchWeather fetchWeather = new FetchWeather();
-                            Weather weather = fetchWeather.setWeatherAttributes(userPreferences.getZipCode());
-                            notificationHelper.complieNotification(weather, userPreferences);
+                        System.out.println(userPreferences.getUserFirstName());
+                        NotificationHelper notificationHelper = new NotificationHelper();
+                        FetchWeather fetchWeather = new FetchWeather();
+                        Weather weather = fetchWeather.setWeatherAttributes(userPreferences.getZipCode());
+                        notificationHelper.complieNotification(weather, userPreferences);
                     }
 
                 });
@@ -120,10 +119,9 @@ public class Menu {
         else if (choice == 3) {
             System.out.println("You have selected to List all Registered Users");
             ArrayList<UserPreferences> userPreferenceList = persistence.getUserPreferences();
-            if(userPreferenceList.size() > 0) {
+            if (userPreferenceList.size() > 0) {
                 userPreferenceList.forEach(userPreferences -> System.out.println(userPreferences.toString()));
-            }
-            else{
+            } else {
                 System.out.println("No registered Users found. Please register a User.\n");
                 registerUser();
             }
@@ -138,6 +136,9 @@ public class Menu {
             String userId = console.next();
             persistence.deleteUserPreferences(userId);
             mainMenu();
+        } else if (choice == 5) {
+            System.out.println("You have selected to Exit. Goodbye.");
+            System.exit(0);
         } else {
             System.out.println("Invalid choice.");
             mainMenu();
@@ -214,18 +215,18 @@ public class Menu {
         OTPConfirmation otpConfirmation = new OTPConfirmation();
         otpConfirmation.sendOtp(up);
         //Once OTP is sent to device, launching the JavaFx UI to allow user to validate the information.
-        try{
+        try {
 
             javafx.application.Application.launch(OTPConfirmation.class);
-        }
-        catch(IllegalStateException e) {
+        } catch (IllegalStateException e) {
             try {
-                throw new NotifyMeException("Currently the application supports only one run per session. Please restart the app and Register 2nd user. \n"+e.getMessage());
+                throw new NotifyMeException(
+                    "Currently the application supports only one run per session. Please restart the app and Register 2nd user. \n" + e
+                        .getMessage());
             } catch (NotifyMeException ex) {
                 ex.printStackTrace();
             }
         }
-
 
         System.out.println("\n Please select which weather conditions you would like to be notified for: (Select all that apply)");
         System.out.println("\t 1. Rain.");

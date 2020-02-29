@@ -90,7 +90,7 @@ public class FetchWeather {
     }
 
     //A method to retrieve data from the JSON object created by fetching the response and setting various attributes in the Weather object.
-    public Weather setWeatherAttributes(Integer zipCode) {
+    public synchronized Weather setWeatherAttributes(Integer zipCode) {
 
         //Creating an Object of type weather
         Weather weather = new Weather();

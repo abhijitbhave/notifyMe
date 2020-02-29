@@ -11,7 +11,7 @@ public class NotificationHelper<K> {
     // we should be able to support other types of events as well.
     //As long as the objects of new events contain a toString method (implicit or explicit) the compile Generics method should work fine.
 
-    public void complieNotification(K notificaitonObject, UserPreferences userPreferences) {
+    public synchronized void complieNotification(K notificaitonObject, UserPreferences userPreferences) {
 
         //Leveraging the Notification Factory class to build the right notification object based on the users preferences.
         //IF the type is set to Sms a SMSNotification object is created, else if the type is set to Email an EmailNotification object is created.
